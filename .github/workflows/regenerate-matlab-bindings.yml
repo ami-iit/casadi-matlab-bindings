@@ -20,12 +20,12 @@ jobs:
         - name: Install dependencies via apt
           run: |
             # Install CasADi dependencies
-            apt-get update -y
-            apt-get upgrade -y
+            sudo apt-get update -y
+            sudo apt-get upgrade -y
             # From https://github.com/casadi/casadi/wiki/InstallationLinux
-            apt-get install -y build-essential gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
+            sudo apt-get install -y build-essential gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
             # From https://github.com/swig/swig/wiki/Getting-Started
-            apt-get install -y libpcre3-dev autoconf automake libtool bison --install-recommends
+            sudo apt-get install -y libpcre3-dev autoconf automake libtool bison --install-recommends
 
         - name: Check status of repo
           run: |
@@ -44,7 +44,7 @@ jobs:
             sh autogen.sh
             ./configure --with-matlab
             make 
-            make install
+            sudo make install
 
         - name: Verify which SWIG and gcc is found 
           run: |
