@@ -21,7 +21,6 @@ jobs:
         # From https://github.com/casadi/casadi/wiki/matlab
         - name: Install SWIG for that supports MATLAB required by CasADi
           run: |
-            apt-get remove swig swig4.0
             cd ..
             git clone https://github.com/jaeandersson/swig
             cd swig
