@@ -7,16 +7,6 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     function this = swig_this(self)
       this = casadiMEX(3, self);
     end
-    function varargout = sanity_check(self,varargin)
-    %SANITY_CHECK [DEPRECATED] Correctness is checked during construction
-    %
-    %  SANITY_CHECK(self, bool complete)
-    %
-    %
-    %
-    %
-      [varargout{1:nargout}] = casadiMEX(514, self, varargin{:});
-    end
     function varargout = has_nz(self,varargin)
     %HAS_NZ Returns true if the matrix has a non-zero at location rr, cc.
     %
@@ -25,7 +15,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(515, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(512, self, varargin{:});
     end
     function varargout = nonzero(self,varargin)
     %NONZERO Returns the truth value of a Matrix.
@@ -35,7 +25,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(516, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(513, self, varargin{:});
     end
     function varargout = get(self,varargin)
     %GET 
@@ -49,7 +39,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = GET(self, bool ind1, IM rr, IM cc)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(517, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(514, self, varargin{:});
     end
     function varargout = set(self,varargin)
     %SET 
@@ -63,7 +53,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SET(self, SX m, bool ind1, IM rr, IM cc)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(518, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(515, self, varargin{:});
     end
     function varargout = get_nz(self,varargin)
     %GET_NZ 
@@ -72,7 +62,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = GET_NZ(self, bool ind1, IM k)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(519, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(516, self, varargin{:});
     end
     function varargout = set_nz(self,varargin)
     %SET_NZ 
@@ -81,7 +71,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SET_NZ(self, SX m, bool ind1, IM k)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(520, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(517, self, varargin{:});
     end
     function varargout = uplus(self,varargin)
     %UPLUS 
@@ -89,7 +79,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = UPLUS(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(521, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(518, self, varargin{:});
     end
     function varargout = uminus(self,varargin)
     %UMINUS 
@@ -97,7 +87,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = UMINUS(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(522, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(519, self, varargin{:});
     end
     function varargout = printme(self,varargin)
     %PRINTME 
@@ -105,7 +95,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = PRINTME(self, SX y)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(528, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(525, self, varargin{:});
     end
     function varargout = T(self,varargin)
     %T Transpose the matrix.
@@ -115,7 +105,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(529, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(526, self, varargin{:});
     end
     function varargout = print_split(self,varargin)
     %PRINT_SPLIT Get strings corresponding to the nonzeros and the interdependencies.
@@ -125,7 +115,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(535, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(532, self, varargin{:});
     end
     function varargout = disp(self,varargin)
     %DISP Print a representation of the object.
@@ -135,7 +125,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(536, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(533, self, varargin{:});
     end
     function varargout = str(self,varargin)
     %STR Get string representation.
@@ -145,7 +135,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(537, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(534, self, varargin{:});
     end
     function varargout = print_scalar(self,varargin)
     %PRINT_SCALAR Print scalar.
@@ -155,7 +145,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(538, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(535, self, varargin{:});
     end
     function varargout = print_vector(self,varargin)
     %PRINT_VECTOR Print vector-style.
@@ -165,7 +155,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(539, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(536, self, varargin{:});
     end
     function varargout = print_dense(self,varargin)
     %PRINT_DENSE Print dense matrix-stype.
@@ -175,7 +165,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(540, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(537, self, varargin{:});
     end
     function varargout = print_sparse(self,varargin)
     %PRINT_SPARSE Print sparse matrix style.
@@ -185,7 +175,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(541, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(538, self, varargin{:});
     end
     function varargout = clear(self,varargin)
     %CLEAR 
@@ -193,7 +183,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  CLEAR(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(542, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(539, self, varargin{:});
     end
     function varargout = resize(self,varargin)
     %RESIZE 
@@ -201,7 +191,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  RESIZE(self, int nrow, int ncol)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(543, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(540, self, varargin{:});
     end
     function varargout = reserve(self,varargin)
     %RESERVE 
@@ -210,7 +200,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  RESERVE(self, int nnz, int ncol)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(544, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(541, self, varargin{:});
     end
     function varargout = erase(self,varargin)
     %ERASE Erase a submatrix (leaving structural zeros in its place) Erase elements of
@@ -254,7 +244,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(545, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(542, self, varargin{:});
     end
     function varargout = remove(self,varargin)
     %REMOVE Remove columns and rows Remove/delete rows and/or columns of a matrix.
@@ -264,7 +254,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(546, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(543, self, varargin{:});
     end
     function varargout = enlarge(self,varargin)
     %ENLARGE Enlarge matrix Make the matrix larger by inserting empty rows and columns,
@@ -275,7 +265,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(547, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(544, self, varargin{:});
     end
     function varargout = sparsity(self,varargin)
     %SPARSITY Get an owning reference to the sparsity pattern.
@@ -285,7 +275,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(548, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(545, self, varargin{:});
     end
     function varargout = element_hash(self,varargin)
     %ELEMENT_HASH 
@@ -293,7 +283,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = ELEMENT_HASH(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(553, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(550, self, varargin{:});
     end
     function varargout = is_regular(self,varargin)
     %IS_REGULAR 
@@ -301,7 +291,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_REGULAR(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(554, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(551, self, varargin{:});
     end
     function varargout = is_smooth(self,varargin)
     %IS_SMOOTH 
@@ -309,7 +299,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_SMOOTH(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(555, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(552, self, varargin{:});
     end
     function varargout = is_leaf(self,varargin)
     %IS_LEAF 
@@ -317,7 +307,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_LEAF(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(556, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(553, self, varargin{:});
     end
     function varargout = is_commutative(self,varargin)
     %IS_COMMUTATIVE 
@@ -325,7 +315,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_COMMUTATIVE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(557, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(554, self, varargin{:});
     end
     function varargout = is_symbolic(self,varargin)
     %IS_SYMBOLIC 
@@ -333,7 +323,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_SYMBOLIC(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(558, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(555, self, varargin{:});
     end
     function varargout = is_valid_input(self,varargin)
     %IS_VALID_INPUT 
@@ -341,7 +331,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_VALID_INPUT(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(559, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(556, self, varargin{:});
     end
     function varargout = has_duplicates(self,varargin)
     %HAS_DUPLICATES 
@@ -349,7 +339,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = HAS_DUPLICATES(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(560, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(557, self, varargin{:});
     end
     function varargout = reset_input(self,varargin)
     %RESET_INPUT 
@@ -357,7 +347,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  RESET_INPUT(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(561, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(558, self, varargin{:});
     end
     function varargout = is_constant(self,varargin)
     %IS_CONSTANT Check if the matrix is constant (note that false negative answers are
@@ -368,7 +358,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(562, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(559, self, varargin{:});
     end
     function varargout = is_integer(self,varargin)
     %IS_INTEGER Check if the matrix is integer-valued (note that false negative answers are
@@ -379,7 +369,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(563, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(560, self, varargin{:});
     end
     function varargout = is_zero(self,varargin)
     %IS_ZERO check if the matrix is 0 (note that false negative answers are possible)
@@ -389,7 +379,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(564, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(561, self, varargin{:});
     end
     function varargout = is_one(self,varargin)
     %IS_ONE check if the matrix is 1 (note that false negative answers are possible)
@@ -399,7 +389,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(565, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(562, self, varargin{:});
     end
     function varargout = is_minus_one(self,varargin)
     %IS_MINUS_ONE check if the matrix is -1 (note that false negative answers are possible)
@@ -409,7 +399,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(566, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(563, self, varargin{:});
     end
     function varargout = is_eye(self,varargin)
     %IS_EYE check if the matrix is an identity matrix (note that false negative answers
@@ -420,7 +410,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(567, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(564, self, varargin{:});
     end
     function varargout = op(self,varargin)
     %OP 
@@ -428,7 +418,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = OP(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(568, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(565, self, varargin{:});
     end
     function varargout = is_op(self,varargin)
     %IS_OP 
@@ -436,7 +426,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  bool = IS_OP(self, int op)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(569, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(566, self, varargin{:});
     end
     function varargout = has_zeros(self,varargin)
     %HAS_ZEROS Check if the matrix has any zero entries which are not structural zeros.
@@ -446,7 +436,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(570, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(567, self, varargin{:});
     end
     function varargout = nonzeros(self,varargin)
     %NONZEROS Get all nonzeros.
@@ -458,7 +448,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(571, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(568, self, varargin{:});
     end
     function varargout = elements(self,varargin)
     %ELEMENTS Get all elements.
@@ -468,7 +458,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(572, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(569, self, varargin{:});
     end
     function varargout = to_double(self,varargin)
     %TO_DOUBLE 
@@ -476,7 +466,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  double = TO_DOUBLE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(573, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(570, self, varargin{:});
     end
     function varargout = to_int(self,varargin)
     %TO_INT 
@@ -484,7 +474,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = TO_INT(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(574, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(571, self, varargin{:});
     end
     function varargout = name(self,varargin)
     %NAME 
@@ -492,7 +482,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  char = NAME(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(575, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(572, self, varargin{:});
     end
     function varargout = dep(self,varargin)
     %DEP 
@@ -500,7 +490,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = DEP(self, int ch)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(576, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(573, self, varargin{:});
     end
     function varargout = n_dep(self,varargin)
     %N_DEP 
@@ -508,7 +498,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = N_DEP(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(577, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(574, self, varargin{:});
     end
     function varargout = export_code(self,varargin)
     %EXPORT_CODE Export matrix in specific language.
@@ -533,7 +523,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(583, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(580, self, varargin{:});
     end
     function varargout = info(self,varargin)
     %INFO 
@@ -541,7 +531,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  struct = INFO(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(584, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(581, self, varargin{:});
     end
     function varargout = serialize(self,varargin)
     %SERIALIZE Serialize an object.
@@ -582,7 +572,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(585, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(582, self, varargin{:});
     end
     function varargout = to_file(self,varargin)
     %TO_FILE Export numerical matrix to file
@@ -609,7 +599,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(587, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(584, self, varargin{:});
     end
     function varargout = paren(self,varargin)
     %PAREN 
@@ -623,7 +613,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = PAREN(self, char rr, char cc)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(589, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(586, self, varargin{:});
     end
     function varargout = paren_asgn(self,varargin)
     %PAREN_ASGN 
@@ -637,7 +627,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  PAREN_ASGN(self, SX m, char rr, char cc)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(590, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(587, self, varargin{:});
     end
     function varargout = brace(self,varargin)
     %BRACE 
@@ -646,7 +636,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = BRACE(self, char rr)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(591, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(588, self, varargin{:});
     end
     function varargout = setbrace(self,varargin)
     %SETBRACE 
@@ -655,7 +645,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SETBRACE(self, SX m, char rr)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(592, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(589, self, varargin{:});
     end
     function varargout = end(self,varargin)
     %END 
@@ -663,7 +653,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = END(self, int i, int n)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(593, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(590, self, varargin{:});
     end
     function varargout = numel(self,varargin)
     %NUMEL 
@@ -674,7 +664,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = NUMEL(self, char rr)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(594, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(591, self, varargin{:});
     end
     function varargout = ctranspose(self,varargin)
     %CTRANSPOSE 
@@ -682,7 +672,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = CTRANSPOSE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(595, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(592, self, varargin{:});
     end
     function self = SX(varargin)
     %SX 
@@ -704,14 +694,14 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(596, varargin{:});
+        tmp = casadiMEX(593, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(597, self);
+          casadiMEX(594, self);
           self.SwigClear();
         end
     end
@@ -723,7 +713,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = BINARY(int op, SX x, SX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(523, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(520, varargin{:});
     end
     function varargout = unary(varargin)
     %UNARY 
@@ -731,7 +721,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = UNARY(int op, SX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(524, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(521, varargin{:});
     end
     function varargout = scalar_matrix(varargin)
     %SCALAR_MATRIX 
@@ -739,7 +729,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = SCALAR_MATRIX(int op, SX x, SX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(525, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(522, varargin{:});
     end
     function varargout = matrix_scalar(varargin)
     %MATRIX_SCALAR 
@@ -747,7 +737,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = MATRIX_SCALAR(int op, SX x, SX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(526, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(523, varargin{:});
     end
     function varargout = matrix_matrix(varargin)
     %MATRIX_MATRIX 
@@ -755,7 +745,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = MATRIX_MATRIX(int op, SX x, SX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(527, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(524, varargin{:});
     end
     function varargout = set_max_depth(varargin)
     %SET_MAX_DEPTH 
@@ -763,7 +753,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SET_MAX_DEPTH(int eq_depth)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(530, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(527, varargin{:});
     end
     function varargout = get_max_depth(varargin)
     %GET_MAX_DEPTH 
@@ -771,7 +761,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  int = GET_MAX_DEPTH()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(531, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(528, varargin{:});
     end
     function varargout = get_input(varargin)
     %GET_INPUT 
@@ -779,7 +769,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  {SX} = GET_INPUT(Function f)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(532, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(529, varargin{:});
     end
     function varargout = get_free(varargin)
     %GET_FREE 
@@ -787,7 +777,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  {SX} = GET_FREE(Function f)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(533, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(530, varargin{:});
     end
     function varargout = type_name(varargin)
     %TYPE_NAME 
@@ -795,7 +785,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(534, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(531, varargin{:});
     end
     function varargout = triplet(varargin)
     %TRIPLET 
@@ -805,7 +795,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = TRIPLET([int] row, [int] col, SX d, int nrow, int ncol)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(549, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(546, varargin{:});
     end
     function varargout = inf(varargin)
     %INF create a matrix with all inf
@@ -817,7 +807,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(550, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(547, varargin{:});
     end
     function varargout = nan(varargin)
     %NAN create a matrix with all nan
@@ -829,7 +819,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(551, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(548, varargin{:});
     end
     function varargout = eye(varargin)
     %EYE 
@@ -837,7 +827,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = EYE(int n)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(552, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(549, varargin{:});
     end
     function varargout = set_precision(varargin)
     %SET_PRECISION Set the 'precision, width & scientific' used in printing and serializing to
@@ -848,7 +838,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(578, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(575, varargin{:});
     end
     function varargout = set_width(varargin)
     %SET_WIDTH Set the 'precision, width & scientific' used in printing and serializing to
@@ -859,7 +849,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(579, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(576, varargin{:});
     end
     function varargout = set_scientific(varargin)
     %SET_SCIENTIFIC Set the 'precision, width & scientific' used in printing and serializing to
@@ -870,7 +860,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(580, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(577, varargin{:});
     end
     function varargout = rng(varargin)
     %RNG 
@@ -878,7 +868,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  RNG(int seed)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(581, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(578, varargin{:});
     end
     function varargout = rand(varargin)
     %RAND Create a matrix with uniformly distributed random numbers.
@@ -890,7 +880,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(582, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(579, varargin{:});
     end
     function varargout = deserialize(varargin)
     %DESERIALIZE 
@@ -900,7 +890,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %  SX = DESERIALIZE(char s)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(586, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(583, varargin{:});
     end
     function varargout = from_file(varargin)
     %FROM_FILE Export numerical matrix to file
@@ -927,7 +917,7 @@ classdef  SX < casadi.MatrixCommon & casadi.GenericExpressionCommon & casadi.Gen
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(588, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(585, varargin{:});
     end
   end
 end

@@ -140,7 +140,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(205, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(204, varargin{:});
     end
     function varargout = mrdivide(varargin)
     %MRDIVIDE Matrix divide (cf. slash '/' in MATLAB)
@@ -152,7 +152,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(206, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(205, varargin{:});
     end
     function varargout = mldivide(varargin)
     %MLDIVIDE Matrix divide (cf. backslash '\\' in MATLAB)
@@ -164,7 +164,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(207, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(206, varargin{:});
     end
     function varargout = symvar(varargin)
     %SYMVAR Get all symbols contained in the supplied expression Get all symbols on
@@ -179,7 +179,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(208, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(207, varargin{:});
     end
     function varargout = bilin(varargin)
     %BILIN Calculate bilinear form x^T A y.
@@ -191,7 +191,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(209, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(208, varargin{:});
     end
     function varargout = rank1(varargin)
     %RANK1 Make a rank-1 update to a matrix A Calculates A + 1/2 * alpha * x*y'.
@@ -203,7 +203,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(210, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(209, varargin{:});
     end
     function varargout = sumsqr(varargin)
     %SUMSQR Calculate sum of squares: sum_ij X_ij^2.
@@ -215,7 +215,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(211, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(210, varargin{:});
     end
     function varargout = linspace(varargin)
     %LINSPACE Matlab's linspace command.
@@ -227,7 +227,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(212, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(211, varargin{:});
     end
     function varargout = interp1d(varargin)
     %INTERP1D Performs 1d linear interpolation.
@@ -242,7 +242,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(213, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(212, varargin{:});
     end
     function varargout = soc(varargin)
     %SOC Construct second-order-convex.
@@ -265,7 +265,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(214, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(213, varargin{:});
     end
     function varargout = cross(varargin)
     %CROSS Matlab's cross command.
@@ -277,7 +277,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(215, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(214, varargin{:});
     end
     function varargout = skew(varargin)
     %SKEW Generate a skew symmetric matrix from a 3-vector.
@@ -289,7 +289,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(216, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(215, varargin{:});
     end
     function varargout = inv_skew(varargin)
     %INV_SKEW Generate the 3-vector progenitor of a skew symmetric matrix.
@@ -301,7 +301,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(217, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(216, varargin{:});
     end
     function varargout = det(varargin)
     %DET Matrix determinant (experimental)
@@ -313,7 +313,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(218, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(217, varargin{:});
     end
     function varargout = inv_minor(varargin)
     %INV_MINOR Matrix inverse (experimental)
@@ -325,7 +325,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(219, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(218, varargin{:});
     end
     function varargout = inv(varargin)
     %INV Matrix inverse.
@@ -340,7 +340,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(220, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(219, varargin{:});
     end
     function varargout = trace(varargin)
     %TRACE Matrix trace.
@@ -352,7 +352,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(221, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(220, varargin{:});
     end
     function varargout = tril2symm(varargin)
     %TRIL2SYMM Convert a lower triangular matrix to a symmetric one.
@@ -364,7 +364,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(222, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(221, varargin{:});
     end
     function varargout = triu2symm(varargin)
     %TRIU2SYMM Convert a upper triangular matrix to a symmetric one.
@@ -376,7 +376,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(223, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(222, varargin{:});
     end
     function varargout = norm_fro(varargin)
     %NORM_FRO Frobenius norm.
@@ -388,7 +388,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(224, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(223, varargin{:});
     end
     function varargout = norm_2(varargin)
     %NORM_2 2-norm
@@ -400,7 +400,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(225, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(224, varargin{:});
     end
     function varargout = norm_1(varargin)
     %NORM_1 1-norm
@@ -412,7 +412,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(226, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(225, varargin{:});
     end
     function varargout = norm_inf(varargin)
     %NORM_INF Infinity-norm.
@@ -424,7 +424,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(227, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(226, varargin{:});
     end
     function varargout = dot(varargin)
     %DOT Inner product of two matrices with x and y matrices of the same dimension.
@@ -436,7 +436,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(228, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(227, varargin{:});
     end
     function varargout = nullspace(varargin)
     %NULLSPACE Computes the nullspace of a matrix A.
@@ -454,7 +454,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(229, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(228, varargin{:});
     end
     function varargout = polyval(varargin)
     %POLYVAL Evaluate a polynomial with coefficients p in x.
@@ -466,7 +466,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(230, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(229, varargin{:});
     end
     function varargout = diag(varargin)
     %DIAG Get the diagonal of a matrix or construct a diagonal When the input is
@@ -480,7 +480,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(231, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(230, varargin{:});
     end
     function varargout = unite(varargin)
     %UNITE Unite two matrices no overlapping sparsity.
@@ -492,7 +492,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(232, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(231, varargin{:});
     end
     function varargout = densify(varargin)
     %DENSIFY Make the matrix dense and assign nonzeros to a value.
@@ -504,7 +504,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(233, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(232, varargin{:});
     end
     function varargout = project(varargin)
     %PROJECT Create a new matrix with a given sparsity pattern but with the nonzeros
@@ -517,7 +517,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(234, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(233, varargin{:});
     end
     function varargout = if_else(varargin)
     %IF_ELSE Branching on MX nodes Ternary operator, "cond ? if_true : if_false".
@@ -529,7 +529,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(235, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(234, varargin{:});
     end
     function varargout = conditional(varargin)
     %CONDITIONAL Create a switch.
@@ -551,7 +551,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(236, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(235, varargin{:});
     end
     function varargout = depends_on(varargin)
     %DEPENDS_ON Check if expression depends on the argument The argument must be symbolic.
@@ -563,7 +563,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(237, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(236, varargin{:});
     end
     function varargout = solve(varargin)
     %SOLVE Solve a system of equations: A*x = b.
@@ -578,7 +578,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(238, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(237, varargin{:});
     end
     function varargout = pinv(varargin)
     %PINV Computes the Moore-Penrose pseudo-inverse.
@@ -596,7 +596,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(239, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(238, varargin{:});
     end
     function varargout = expm_const(varargin)
     %EXPM_CONST 
@@ -606,7 +606,7 @@ classdef  GenericMatrixCommon < SwigRef
     %  MX = EXPM_CONST(MX A, MX t)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(240, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(239, varargin{:});
     end
     function varargout = expm(varargin)
     %EXPM 
@@ -616,7 +616,7 @@ classdef  GenericMatrixCommon < SwigRef
     %  MX = EXPM(MX A)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(241, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(240, varargin{:});
     end
     function varargout = jacobian(varargin)
     %JACOBIAN Calculate Jacobian.
@@ -628,7 +628,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(242, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(241, varargin{:});
     end
     function varargout = jtimes(varargin)
     %JTIMES Calculate the Jacobian and multiply by a vector from the right This is
@@ -644,7 +644,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(243, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(242, varargin{:});
     end
     function varargout = linearize(varargin)
     %LINEARIZE Linearize an expression.
@@ -656,7 +656,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(244, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(243, varargin{:});
     end
     function varargout = which_depends(varargin)
     %WHICH_DEPENDS Find out which variables enter with some order.
@@ -668,7 +668,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(245, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(244, varargin{:});
     end
     function varargout = is_linear(varargin)
     %IS_LINEAR Is expr linear in var?
@@ -683,7 +683,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(246, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(245, varargin{:});
     end
     function varargout = is_quadratic(varargin)
     %IS_QUADRATIC Is expr quadratic in var?
@@ -698,7 +698,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(247, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(246, varargin{:});
     end
     function varargout = gradient(varargin)
     %GRADIENT Calculate Jacobian.
@@ -710,7 +710,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(248, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(247, varargin{:});
     end
     function varargout = tangent(varargin)
     %TANGENT Calculate Jacobian.
@@ -722,7 +722,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(249, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(248, varargin{:});
     end
     function varargout = hessian(varargin)
     %HESSIAN 
@@ -732,7 +732,7 @@ classdef  GenericMatrixCommon < SwigRef
     %  [MX , MX OUTPUT1] = HESSIAN(MX ex, MX arg)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(250, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(249, varargin{:});
     end
     function varargout = quadratic_coeff(varargin)
     %QUADRATIC_COEFF Recognizes quadratic form in scalar expression.
@@ -754,7 +754,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(251, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(250, varargin{:});
     end
     function varargout = linear_coeff(varargin)
     %LINEAR_COEFF Recognizes linear form in vector expression.
@@ -774,7 +774,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(252, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(251, varargin{:});
     end
     function varargout = n_nodes(varargin)
     %N_NODES 
@@ -784,7 +784,7 @@ classdef  GenericMatrixCommon < SwigRef
     %  int = N_NODES(MX A)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(253, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(252, varargin{:});
     end
     function varargout = print_operator(varargin)
     %PRINT_OPERATOR Get a string representation for a binary MatType, using custom arguments.
@@ -796,7 +796,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(254, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(253, varargin{:});
     end
     function varargout = repsum(varargin)
     %REPSUM Given a repeated matrix, computes the sum of repeated parts.
@@ -808,7 +808,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(255, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(254, varargin{:});
     end
     function varargout = diff(varargin)
     %DIFF Returns difference (n-th order) along given axis (MATLAB convention)
@@ -820,7 +820,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(256, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(255, varargin{:});
     end
     function varargout = cumsum(varargin)
     %CUMSUM Returns cumulative sum along given axis (MATLAB convention)
@@ -832,7 +832,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(257, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(256, varargin{:});
     end
     function varargout = einstein(varargin)
     %EINSTEIN Performs 1d linear interpolation.
@@ -850,7 +850,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(258, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(257, varargin{:});
     end
     function varargout = mmin(varargin)
     %MMIN Smallest element in a matrix.
@@ -862,7 +862,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(259, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(258, varargin{:});
     end
     function varargout = mmax(varargin)
     %MMAX Largest element in a matrix.
@@ -874,7 +874,7 @@ classdef  GenericMatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(260, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(259, varargin{:});
     end
     function varargout = evalf(varargin)
     %EVALF 
@@ -884,7 +884,7 @@ classdef  GenericMatrixCommon < SwigRef
     %  DM = EVALF(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(261, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(260, varargin{:});
     end
     function self = GenericMatrixCommon(varargin)
     %GENERICMATRIXCOMMON 
@@ -897,14 +897,14 @@ classdef  GenericMatrixCommon < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(262, varargin{:});
+        tmp = casadiMEX(261, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(263, self);
+          casadiMEX(262, self);
           self.SwigClear();
         end
     end

@@ -20,14 +20,14 @@ classdef  FileSerializer < casadi.SerializerBase
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1128, varargin{:});
+        tmp = casadiMEX(1125, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1129, self);
+          casadiMEX(1126, self);
           self.SwigClear();
         end
     end

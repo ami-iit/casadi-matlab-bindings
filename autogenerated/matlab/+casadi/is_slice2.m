@@ -7,5 +7,5 @@ function varargout = is_slice2(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(204, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(203, varargin{:});
 end

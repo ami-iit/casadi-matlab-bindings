@@ -31,5 +31,5 @@ function varargout = hash_sparsity(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(179, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(178, varargin{:});
 end

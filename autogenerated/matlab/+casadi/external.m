@@ -73,5 +73,5 @@ function varargout = external(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(779, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(776, varargin{:});
 end

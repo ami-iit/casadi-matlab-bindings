@@ -6,5 +6,5 @@ function varargout = has_interpolant(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(856, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(853, varargin{:});
 end

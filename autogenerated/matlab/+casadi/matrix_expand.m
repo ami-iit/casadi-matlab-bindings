@@ -10,5 +10,5 @@ function varargout = matrix_expand(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(871, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(868, varargin{:});
 end

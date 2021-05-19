@@ -15,7 +15,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(265, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(264, self, varargin{:});
     end
     function varargout = nnz_lower(self,varargin)
     %NNZ_LOWER Get the number of non-zeros in the lower triangular half.
@@ -25,7 +25,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(266, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(265, self, varargin{:});
     end
     function varargout = nnz_upper(self,varargin)
     %NNZ_UPPER Get the number of non-zeros in the upper triangular half.
@@ -35,7 +35,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(267, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(266, self, varargin{:});
     end
     function varargout = nnz_diag(self,varargin)
     %NNZ_DIAG Get get the number of non-zeros on the diagonal.
@@ -45,7 +45,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(268, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(267, self, varargin{:});
     end
     function varargout = numel(self,varargin)
     %NUMEL Get the number of elements.
@@ -55,7 +55,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(269, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(268, self, varargin{:});
     end
     function varargout = size1(self,varargin)
     %SIZE1 Get the first dimension (i.e. number of rows)
@@ -65,7 +65,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(270, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(269, self, varargin{:});
     end
     function varargout = rows(self,varargin)
     %ROWS Get the number of rows, Octave-style syntax.
@@ -75,7 +75,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(271, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(270, self, varargin{:});
     end
     function varargout = size2(self,varargin)
     %SIZE2 Get the second dimension (i.e. number of columns)
@@ -85,7 +85,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(272, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(271, self, varargin{:});
     end
     function varargout = columns(self,varargin)
     %COLUMNS Get the number of columns, Octave-style syntax.
@@ -95,7 +95,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(273, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(272, self, varargin{:});
     end
     function varargout = dim(self,varargin)
     %DIM Get string representation of dimensions. The representation is e.g. "4x5"
@@ -106,7 +106,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(274, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(273, self, varargin{:});
     end
     function varargout = size(self,varargin)
     %SIZE Get the size along a particular dimensions.
@@ -147,7 +147,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %.............
     %
     %
-      out = casadiMEX(275, self, varargin{:});
+      out = casadiMEX(274, self, varargin{:});
       if nargout<=1
         varargout{1}=out;
       else
@@ -166,7 +166,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(276, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(275, self, varargin{:});
     end
     function varargout = is_dense(self,varargin)
     %IS_DENSE Check if the matrix expression is dense.
@@ -176,7 +176,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(277, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(276, self, varargin{:});
     end
     function varargout = is_scalar(self,varargin)
     %IS_SCALAR Check if the matrix expression is scalar.
@@ -186,7 +186,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(278, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(277, self, varargin{:});
     end
     function varargout = is_square(self,varargin)
     %IS_SQUARE Check if the matrix expression is square.
@@ -196,7 +196,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(279, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(278, self, varargin{:});
     end
     function varargout = is_vector(self,varargin)
     %IS_VECTOR Check if the matrix is a row or column vector.
@@ -206,7 +206,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(280, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(279, self, varargin{:});
     end
     function varargout = is_row(self,varargin)
     %IS_ROW Check if the matrix is a row vector (i.e. size1()==1)
@@ -216,7 +216,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(281, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(280, self, varargin{:});
     end
     function varargout = is_column(self,varargin)
     %IS_COLUMN Check if the matrix is a column vector (i.e. size2()==1)
@@ -226,7 +226,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(282, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(281, self, varargin{:});
     end
     function varargout = is_triu(self,varargin)
     %IS_TRIU Check if the matrix is upper triangular.
@@ -236,7 +236,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(283, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(282, self, varargin{:});
     end
     function varargout = is_tril(self,varargin)
     %IS_TRIL Check if the matrix is lower triangular.
@@ -246,7 +246,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(284, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(283, self, varargin{:});
     end
     function varargout = row(self,varargin)
     %ROW Get the sparsity pattern. See the Sparsity class for details.
@@ -257,7 +257,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(285, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(284, self, varargin{:});
     end
     function varargout = colind(self,varargin)
     %COLIND Get the sparsity pattern. See the Sparsity class for details.
@@ -268,7 +268,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(286, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(285, self, varargin{:});
     end
     function varargout = sparsity(self,varargin)
     %SPARSITY Get the sparsity pattern.
@@ -278,7 +278,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(287, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(286, self, varargin{:});
     end
     function self = GenDM(varargin)
     %GENDM 
@@ -293,14 +293,14 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(291, varargin{:});
+        tmp = casadiMEX(290, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(292, self);
+          casadiMEX(291, self);
           self.SwigClear();
         end
     end
@@ -429,7 +429,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %.............
     %
     %
-     [varargout{1:nargout}] = casadiMEX(288, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(287, varargin{:});
     end
     function varargout = zeros(varargin)
     %ZEROS Create a dense matrix or a matrix with specified sparsity with all entries
@@ -442,7 +442,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(289, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(288, varargin{:});
     end
     function varargout = ones(varargin)
     %ONES Create a dense matrix or a matrix with specified sparsity with all entries
@@ -455,7 +455,7 @@ classdef  GenDM < casadi.GenericMatrixCommon & casadi.SparsityInterfaceCommon
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(290, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(289, varargin{:});
     end
   end
 end

@@ -6,5 +6,5 @@ function varargout = load_integrator(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(782, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(779, varargin{:});
 end

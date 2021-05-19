@@ -6,5 +6,5 @@ function varargout = load_conic(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(798, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(795, varargin{:});
 end

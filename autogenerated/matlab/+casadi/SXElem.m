@@ -19,14 +19,14 @@ classdef  SXElem < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(512, varargin{:});
+        tmp = casadiMEX(510, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(513, self);
+          casadiMEX(511, self);
           self.SwigClear();
         end
     end

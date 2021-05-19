@@ -24,7 +24,7 @@ classdef  CodeGenerator < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(859, varargin{:});
+        tmp = casadiMEX(856, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
@@ -37,7 +37,7 @@ classdef  CodeGenerator < SwigRef
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(860, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(857, self, varargin{:});
     end
     function varargout = dump(self,varargin)
     %DUMP Generate a file, return code as string.
@@ -47,7 +47,7 @@ classdef  CodeGenerator < SwigRef
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(861, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(858, self, varargin{:});
     end
     function varargout = generate(self,varargin)
     %GENERATE Generate file(s) The "prefix" argument will be prepended to the generated
@@ -58,7 +58,7 @@ classdef  CodeGenerator < SwigRef
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(862, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(859, self, varargin{:});
     end
     function varargout = add_include(self,varargin)
     %ADD_INCLUDE Add an include file optionally using a relative path "..." instead of an
@@ -69,11 +69,11 @@ classdef  CodeGenerator < SwigRef
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(863, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(860, self, varargin{:});
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(864, self);
+          casadiMEX(861, self);
           self.SwigClear();
         end
     end

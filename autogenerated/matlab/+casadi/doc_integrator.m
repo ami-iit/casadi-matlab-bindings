@@ -6,5 +6,5 @@ function varargout = doc_integrator(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(783, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(780, varargin{:});
 end

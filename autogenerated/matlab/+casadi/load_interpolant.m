@@ -6,5 +6,5 @@ function varargout = load_interpolant(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(857, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(854, varargin{:});
 end

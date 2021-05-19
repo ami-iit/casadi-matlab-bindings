@@ -30,7 +30,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(397, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(396, varargin{:});
     end
     function varargout = any(varargin)
     %ANY Returns true only if any element in the matrix is true.
@@ -41,7 +41,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(398, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(397, varargin{:});
     end
     function varargout = adj(varargin)
     %ADJ Matrix adjoint.
@@ -52,7 +52,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(399, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(398, varargin{:});
     end
     function varargout = minor(varargin)
     %MINOR Get the (i,j) minor matrix.
@@ -63,7 +63,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(400, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(399, varargin{:});
     end
     function varargout = cofactor(varargin)
     %COFACTOR Get the (i,j) cofactor matrix.
@@ -74,7 +74,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(401, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(400, varargin{:});
     end
     function varargout = qr(varargin)
     %QR QR factorization using the modified Gram-Schmidt algorithm More stable than
@@ -88,7 +88,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(402, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(401, varargin{:});
     end
     function varargout = qr_sparse(varargin)
     %QR_SPARSE Sparse direct QR factorization See T. Davis: Direct Methods for Sparse
@@ -100,7 +100,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(403, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(402, varargin{:});
     end
     function varargout = qr_solve(varargin)
     %QR_SOLVE Solve using a sparse QR factorization.
@@ -111,7 +111,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(404, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(403, varargin{:});
     end
     function varargout = ldl(varargin)
     %LDL Sparse LDL^T factorization Returns D and the strictly upper triangular
@@ -124,7 +124,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(405, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(404, varargin{:});
     end
     function varargout = ldl_solve(varargin)
     %LDL_SOLVE Solve using a sparse LDL^T factorization.
@@ -135,7 +135,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(406, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(405, varargin{:});
     end
     function varargout = chol(varargin)
     %CHOL Obtain a Cholesky factorisation of a matrix Performs and LDL transformation
@@ -147,7 +147,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(407, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(406, varargin{:});
     end
     function varargout = norm_inf_mul(varargin)
     %NORM_INF_MUL Inf-norm of a Matrix-Matrix product.
@@ -158,7 +158,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(408, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(407, varargin{:});
     end
     function varargout = sparsify(varargin)
     %SPARSIFY Make a matrix sparse by removing numerical zeros.
@@ -169,7 +169,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(409, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(408, varargin{:});
     end
     function varargout = expand(varargin)
     %EXPAND Expand the expression as a weighted sum (with constant weights)
@@ -180,7 +180,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(410, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(409, varargin{:});
     end
     function varargout = pw_const(varargin)
     %PW_CONST Create a piecewise constant function Create a piecewise constant function
@@ -204,7 +204,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(411, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(410, varargin{:});
     end
     function varargout = pw_lin(varargin)
     %PW_LIN t a scalar variable (e.g. time)
@@ -221,7 +221,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(412, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(411, varargin{:});
     end
     function varargout = heaviside(varargin)
     %HEAVISIDE Heaviside function.
@@ -235,7 +235,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(413, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(412, varargin{:});
     end
     function varargout = rectangle(varargin)
     %RECTANGLE rectangle function
@@ -252,7 +252,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(414, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(413, varargin{:});
     end
     function varargout = triangle(varargin)
     %TRIANGLE triangle function
@@ -266,7 +266,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(415, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(414, varargin{:});
     end
     function varargout = ramp(varargin)
     %RAMP ramp function
@@ -282,7 +282,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(416, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(415, varargin{:});
     end
     function varargout = gauss_quadrature(varargin)
     %GAUSS_QUADRATURE Matrix adjoint.
@@ -295,7 +295,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(417, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(416, varargin{:});
     end
     function varargout = taylor(varargin)
     %TAYLOR univariate Taylor series expansion
@@ -320,7 +320,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(418, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(417, varargin{:});
     end
     function varargout = mtaylor(varargin)
     %MTAYLOR multivariate Taylor series expansion
@@ -345,7 +345,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(419, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(418, varargin{:});
     end
     function varargout = poly_coeff(varargin)
     %POLY_COEFF extracts polynomial coefficients from an expression
@@ -363,7 +363,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(420, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(419, varargin{:});
     end
     function varargout = poly_roots(varargin)
     %POLY_ROOTS Attempts to find the roots of a polynomial.
@@ -377,7 +377,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(421, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(420, varargin{:});
     end
     function varargout = eig_symbolic(varargin)
     %EIG_SYMBOLIC Attempts to find the eigenvalues of a symbolic matrix This will only work
@@ -389,7 +389,7 @@ classdef  MatrixCommon < SwigRef
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(422, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(421, varargin{:});
     end
     function self = MatrixCommon(varargin)
     %MATRIXCOMMON 
@@ -402,14 +402,14 @@ classdef  MatrixCommon < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(423, varargin{:});
+        tmp = casadiMEX(422, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(424, self);
+          casadiMEX(423, self);
           self.SwigClear();
         end
     end

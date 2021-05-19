@@ -22,14 +22,14 @@ classdef  CasadiMeta < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(938, varargin{:});
+        tmp = casadiMEX(935, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(939, self);
+          casadiMEX(936, self);
           self.SwigClear();
         end
     end
@@ -41,7 +41,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = VERSION()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(927, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(924, varargin{:});
     end
     function varargout = git_revision(varargin)
     %GIT_REVISION 
@@ -49,7 +49,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = GIT_REVISION()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(928, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(925, varargin{:});
     end
     function varargout = git_describe(varargin)
     %GIT_DESCRIBE 
@@ -57,7 +57,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = GIT_DESCRIBE()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(929, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(926, varargin{:});
     end
     function varargout = feature_list(varargin)
     %FEATURE_LIST 
@@ -65,7 +65,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = FEATURE_LIST()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(930, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(927, varargin{:});
     end
     function varargout = build_type(varargin)
     %BUILD_TYPE 
@@ -73,7 +73,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = BUILD_TYPE()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(931, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(928, varargin{:});
     end
     function varargout = compiler_id(varargin)
     %COMPILER_ID 
@@ -81,7 +81,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = COMPILER_ID()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(932, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(929, varargin{:});
     end
     function varargout = compiler(varargin)
     %COMPILER 
@@ -89,7 +89,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = COMPILER()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(933, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(930, varargin{:});
     end
     function varargout = compiler_flags(varargin)
     %COMPILER_FLAGS 
@@ -97,7 +97,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = COMPILER_FLAGS()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(934, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(931, varargin{:});
     end
     function varargout = modules(varargin)
     %MODULES 
@@ -105,7 +105,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = MODULES()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(935, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(932, varargin{:});
     end
     function varargout = plugins(varargin)
     %PLUGINS 
@@ -113,7 +113,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = PLUGINS()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(936, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(933, varargin{:});
     end
     function varargout = install_prefix(varargin)
     %INSTALL_PREFIX 
@@ -121,7 +121,7 @@ classdef  CasadiMeta < SwigRef
     %  char const * = INSTALL_PREFIX()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(937, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(934, varargin{:});
     end
   end
 end

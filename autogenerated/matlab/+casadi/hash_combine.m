@@ -37,5 +37,5 @@ function varargout = hash_combine(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(178, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(177, varargin{:});
 end

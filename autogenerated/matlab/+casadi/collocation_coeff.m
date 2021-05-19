@@ -59,5 +59,5 @@ function varargout = collocation_coeff(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(942, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(939, varargin{:});
 end

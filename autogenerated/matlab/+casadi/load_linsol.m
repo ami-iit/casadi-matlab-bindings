@@ -6,5 +6,5 @@ function varargout = load_linsol(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(839, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(836, varargin{:});
 end

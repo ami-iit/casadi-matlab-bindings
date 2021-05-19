@@ -37,5 +37,5 @@ function varargout = dple_in(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(842, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(839, varargin{:});
 end

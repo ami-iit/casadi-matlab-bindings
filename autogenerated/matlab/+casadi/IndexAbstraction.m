@@ -9,10 +9,10 @@ classdef  IndexAbstraction < SwigRef
       this = casadiMEX(3, self);
     end
     function v = start(self)
-      v = casadiMEX(1173, self);
+      v = casadiMEX(1170, self);
     end
     function v = stop(self)
-      v = casadiMEX(1174, self);
+      v = casadiMEX(1171, self);
     end
     function self = IndexAbstraction(varargin)
     %INDEXABSTRACTION 
@@ -25,14 +25,14 @@ classdef  IndexAbstraction < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1175, varargin{:});
+        tmp = casadiMEX(1172, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1176, self);
+          casadiMEX(1173, self);
           self.SwigClear();
         end
     end

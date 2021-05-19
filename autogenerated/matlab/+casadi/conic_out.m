@@ -37,5 +37,5 @@ function varargout = conic_out(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(791, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(788, varargin{:});
 end

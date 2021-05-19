@@ -20,5 +20,5 @@ function varargout = simpleIntegrator(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(945, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(942, varargin{:});
 end

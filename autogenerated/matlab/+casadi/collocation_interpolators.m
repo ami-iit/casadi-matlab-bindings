@@ -44,5 +44,5 @@ function varargout = collocation_interpolators(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(941, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(938, varargin{:});
 end

@@ -9,7 +9,7 @@ classdef  SerializerBase < SwigRef
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1076, self);
+          casadiMEX(1073, self);
           self.SwigClear();
         end
     end
@@ -38,7 +38,7 @@ classdef  SerializerBase < SwigRef
     %  PACK(self, GenericType e)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1077, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1074, self, varargin{:});
     end
     function varargout = connect(self,varargin)
     %CONNECT 
@@ -46,7 +46,7 @@ classdef  SerializerBase < SwigRef
     %  CONNECT(self, DeserializerBase s)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1079, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1076, self, varargin{:});
     end
     function varargout = reset(self,varargin)
     %RESET 
@@ -54,7 +54,7 @@ classdef  SerializerBase < SwigRef
     %  RESET(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1080, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1077, self, varargin{:});
     end
     function self = SerializerBase(varargin)
     %SERIALIZERBASE C++ includes: serializer.hpp 
@@ -217,7 +217,7 @@ classdef  SerializerBase < SwigRef
     %  char = TYPE_TO_STRING(casadi::SerializerBase::SerializationType type)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(1078, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(1075, varargin{:});
     end
   end
 end

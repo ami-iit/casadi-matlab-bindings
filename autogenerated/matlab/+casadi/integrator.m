@@ -512,5 +512,5 @@ function varargout = integrator(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(780, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(777, varargin{:});
 end

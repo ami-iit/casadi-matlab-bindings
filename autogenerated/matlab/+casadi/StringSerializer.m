@@ -16,14 +16,14 @@ classdef  StringSerializer < casadi.SerializerBase
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1125, varargin{:});
+        tmp = casadiMEX(1122, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1126, self);
+          casadiMEX(1123, self);
           self.SwigClear();
         end
     end
@@ -37,7 +37,7 @@ classdef  StringSerializer < casadi.SerializerBase
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1127, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1124, self, varargin{:});
     end
   end
   methods(Static)

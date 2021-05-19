@@ -10,13 +10,13 @@ classdef  Slice < casadi.PrintableCommon
     %
   methods
     function v = start(self)
-      v = casadiMEX(180, self);
+      v = casadiMEX(179, self);
     end
     function v = stop(self)
-      v = casadiMEX(181, self);
+      v = casadiMEX(180, self);
     end
     function v = step(self)
-      v = casadiMEX(182, self);
+      v = casadiMEX(181, self);
     end
     function varargout = all(self,varargin)
     %ALL Get a vector of indices (nested slice)
@@ -59,7 +59,7 @@ classdef  Slice < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(183, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(182, self, varargin{:});
     end
     function varargout = size(self,varargin)
     %SIZE Get number of elements.
@@ -69,7 +69,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      out = casadiMEX(184, self, varargin{:});
+      out = casadiMEX(183, self, varargin{:});
       if nargout<=1
         varargout{1}=out;
       else
@@ -87,7 +87,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(185, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(184, self, varargin{:});
     end
     function varargout = is_scalar(self,varargin)
     %IS_SCALAR Is the slice a scalar.
@@ -97,7 +97,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(186, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(185, self, varargin{:});
     end
     function varargout = scalar(self,varargin)
     %SCALAR Get scalar (if is_scalar)
@@ -107,7 +107,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(187, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(186, self, varargin{:});
     end
     function varargout = eq(self,varargin)
     %EQ 
@@ -115,7 +115,7 @@ classdef  Slice < casadi.PrintableCommon
     %  bool = EQ(self, Slice other)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(188, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(187, self, varargin{:});
     end
     function varargout = ne(self,varargin)
     %NE 
@@ -123,7 +123,7 @@ classdef  Slice < casadi.PrintableCommon
     %  bool = NE(self, Slice other)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(189, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(188, self, varargin{:});
     end
     function varargout = apply(self,varargin)
     %APPLY Apply concrete length.
@@ -133,7 +133,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(190, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(189, self, varargin{:});
     end
     function varargout = minus(self,varargin)
     %MINUS 
@@ -141,7 +141,7 @@ classdef  Slice < casadi.PrintableCommon
     %  Slice = MINUS(self, int i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(191, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(190, self, varargin{:});
     end
     function varargout = mtimes(self,varargin)
     %MTIMES 
@@ -149,7 +149,7 @@ classdef  Slice < casadi.PrintableCommon
     %  Slice = MTIMES(self, int i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(192, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(191, self, varargin{:});
     end
     function varargout = type_name(self,varargin)
     %TYPE_NAME Get name of the class.
@@ -159,7 +159,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(193, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(192, self, varargin{:});
     end
     function varargout = disp(self,varargin)
     %DISP Print a description of the object.
@@ -169,7 +169,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(194, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(193, self, varargin{:});
     end
     function varargout = str(self,varargin)
     %STR Get string representation.
@@ -179,7 +179,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(195, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(194, self, varargin{:});
     end
     function varargout = info(self,varargin)
     %INFO Obtain information
@@ -189,7 +189,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(196, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(195, self, varargin{:});
     end
     function varargout = serialize(self,varargin)
     %SERIALIZE Serialize an object.
@@ -199,7 +199,7 @@ classdef  Slice < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(197, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(196, self, varargin{:});
     end
     function self = Slice(varargin)
     %SLICE 
@@ -276,14 +276,14 @@ classdef  Slice < casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(199, varargin{:});
+        tmp = casadiMEX(198, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(200, self);
+          casadiMEX(199, self);
           self.SwigClear();
         end
     end
@@ -295,7 +295,7 @@ classdef  Slice < casadi.PrintableCommon
     %  Slice = DESERIALIZE(casadi::DeserializingStream & s)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(198, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(197, varargin{:});
     end
   end
 end

@@ -80,7 +80,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1135, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1132, self, varargin{:});
     end
     function varargout = internal_parameter(self,varargin)
     %INTERNAL_PARAMETER Create a parameter (symbol); fixed during optimization.
@@ -103,7 +103,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1136, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1133, self, varargin{:});
     end
     function varargout = minimize(self,varargin)
     %MINIMIZE Set objective.
@@ -116,7 +116,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1137, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1134, self, varargin{:});
     end
     function varargout = internal_subject_to(self,varargin)
     %INTERNAL_SUBJECT_TO Clear constraints.
@@ -186,7 +186,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1138, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1135, self, varargin{:});
     end
     function varargout = solver(self,varargin)
     %SOLVER Set a solver.
@@ -208,7 +208,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1139, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1136, self, varargin{:});
     end
     function varargout = set_initial(self,varargin)
     %SET_INITIAL Set initial guess for decision variables
@@ -227,7 +227,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1140, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1137, self, varargin{:});
     end
     function varargout = set_value(self,varargin)
     %SET_VALUE Set value of parameter.
@@ -240,7 +240,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1141, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1138, self, varargin{:});
     end
     function varargout = solve(self,varargin)
     %SOLVE Crunch the numbers; solve the problem.
@@ -250,7 +250,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1142, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1139, self, varargin{:});
     end
     function varargout = solve_limited(self,varargin)
     %SOLVE_LIMITED Crunch the numbers; solve the problem.
@@ -263,7 +263,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1143, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1140, self, varargin{:});
     end
     function varargout = value(self,varargin)
     %VALUE Obtain value of expression at the current value
@@ -284,7 +284,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1144, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1141, self, varargin{:});
     end
     function varargout = stats(self,varargin)
     %STATS Get statistics.
@@ -297,7 +297,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1145, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1142, self, varargin{:});
     end
     function varargout = return_status(self,varargin)
     %RETURN_STATUS Get return status of solver passed as-is from nlpsol No stability can be
@@ -308,7 +308,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1146, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1143, self, varargin{:});
     end
     function varargout = initial(self,varargin)
     %INITIAL get assignment expressions for initial values
@@ -318,7 +318,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1147, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1144, self, varargin{:});
     end
     function varargout = value_variables(self,varargin)
     %VALUE_VARIABLES get assignment expressions for latest values
@@ -328,7 +328,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1148, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1145, self, varargin{:});
     end
     function varargout = value_parameters(self,varargin)
     %VALUE_PARAMETERS 
@@ -336,7 +336,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %  {MX} = VALUE_PARAMETERS(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1149, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1146, self, varargin{:});
     end
     function varargout = dual(self,varargin)
     %DUAL get the dual variable
@@ -349,7 +349,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1150, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1147, self, varargin{:});
     end
     function varargout = nx(self,varargin)
     %NX Number of (scalarised) decision variables.
@@ -359,7 +359,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1151, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1148, self, varargin{:});
     end
     function varargout = np(self,varargin)
     %NP Number of (scalarised) parameters.
@@ -369,7 +369,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1152, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1149, self, varargin{:});
     end
     function varargout = ng(self,varargin)
     %NG Number of (scalarised) constraints.
@@ -379,7 +379,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1153, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1150, self, varargin{:});
     end
     function varargout = x(self,varargin)
     %X Get all (scalarised) decision variables as a symbolic column vector.
@@ -389,7 +389,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1154, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1151, self, varargin{:});
     end
     function varargout = p(self,varargin)
     %P Get all (scalarised) parameters as a symbolic column vector.
@@ -399,7 +399,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1155, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1152, self, varargin{:});
     end
     function varargout = g(self,varargin)
     %G Get all (scalarised) constraint expressions as a column vector.
@@ -409,7 +409,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1156, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1153, self, varargin{:});
     end
     function varargout = f(self,varargin)
     %F Get objective expression.
@@ -419,7 +419,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1157, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1154, self, varargin{:});
     end
     function varargout = lbg(self,varargin)
     %LBG Get all (scalarised) bounds on constraints as a column vector.
@@ -429,7 +429,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1158, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1155, self, varargin{:});
     end
     function varargout = ubg(self,varargin)
     %UBG 
@@ -437,7 +437,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %  MX = UBG(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1159, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1156, self, varargin{:});
     end
     function varargout = lam_g(self,varargin)
     %LAM_G Get all (scalarised) dual variables as a symbolic column vector.
@@ -457,7 +457,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1160, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1157, self, varargin{:});
     end
     function varargout = to_function(self,varargin)
     %TO_FUNCTION 
@@ -494,7 +494,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1161, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1158, self, varargin{:});
     end
     function varargout = debug(self,varargin)
     %DEBUG Get a copy with advanced functionality.
@@ -510,7 +510,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1162, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1159, self, varargin{:});
     end
     function varargout = advanced(self,varargin)
     %ADVANCED Get a copy with advanced functionality.
@@ -526,7 +526,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1163, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1160, self, varargin{:});
     end
     function varargout = copy(self,varargin)
     %COPY Get a copy of the.
@@ -539,7 +539,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1164, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1161, self, varargin{:});
     end
     function varargout = update_user_dict(self,varargin)
     %UPDATE_USER_DICT 
@@ -575,7 +575,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1165, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1162, self, varargin{:});
     end
     function varargout = user_dict(self,varargin)
     %USER_DICT Get user data.
@@ -585,7 +585,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1166, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1163, self, varargin{:});
     end
     function varargout = type_name(self,varargin)
     %TYPE_NAME Readable name of the class.
@@ -595,7 +595,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1167, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1164, self, varargin{:});
     end
     function varargout = disp(self,varargin)
     %DISP Print representation.
@@ -605,7 +605,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1168, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1165, self, varargin{:});
     end
     function varargout = str(self,varargin)
     %STR Get string representation.
@@ -615,7 +615,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1169, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1166, self, varargin{:});
     end
     function varargout = callback_class(self,varargin)
     %CALLBACK_CLASS Helper methods for callback()
@@ -628,7 +628,7 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1170, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1167, self, varargin{:});
     end
 
       function out = variable(self, varargin)
@@ -682,14 +682,14 @@ classdef  Opti < casadi.PrintableCommon & casadi.SharedObject
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1171, varargin{:});
+        tmp = casadiMEX(1168, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1172, self);
+          casadiMEX(1169, self);
           self.SwigClear();
         end
     end

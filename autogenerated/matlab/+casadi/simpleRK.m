@@ -17,5 +17,5 @@ function varargout = simpleRK(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(943, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(940, varargin{:});
 end

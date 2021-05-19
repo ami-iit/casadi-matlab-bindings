@@ -20,14 +20,14 @@ classdef  FileDeserializer < casadi.DeserializerBase
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1133, varargin{:});
+        tmp = casadiMEX(1130, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1134, self);
+          casadiMEX(1131, self);
           self.SwigClear();
         end
     end

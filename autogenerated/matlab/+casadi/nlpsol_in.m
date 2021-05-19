@@ -115,5 +115,5 @@ function varargout = nlpsol_in(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(802, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(799, varargin{:});
 end

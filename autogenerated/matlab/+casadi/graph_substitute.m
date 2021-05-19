@@ -8,5 +8,5 @@ function varargout = graph_substitute(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(872, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(869, varargin{:});
 end

@@ -6,5 +6,5 @@ function varargout = convexify(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(874, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(871, varargin{:});
 end

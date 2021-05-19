@@ -139,7 +139,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(880, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(877, self, varargin{:});
     end
     function varargout = has_function(self,varargin)
     %HAS_FUNCTION 
@@ -147,7 +147,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  bool = HAS_FUNCTION(self, char symname)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(881, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(878, self, varargin{:});
     end
     function varargout = has_meta(self,varargin)
     %HAS_META Does a meta entry exist?
@@ -157,7 +157,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(882, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(879, self, varargin{:});
     end
     function varargout = get_meta(self,varargin)
     %GET_META Get entry as a text.
@@ -167,7 +167,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(883, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(880, self, varargin{:});
     end
     function varargout = inlined(self,varargin)
     %INLINED Check if a function is inlined.
@@ -177,7 +177,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(884, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(881, self, varargin{:});
     end
     function varargout = body(self,varargin)
     %BODY Get the function body, if inlined.
@@ -187,7 +187,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(885, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(882, self, varargin{:});
     end
     function varargout = library(self,varargin)
     %LIBRARY Get library name.
@@ -197,7 +197,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(886, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(883, self, varargin{:});
     end
     function varargout = serialize(self,varargin)
     %SERIALIZE Serialize an object.
@@ -207,7 +207,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(887, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(884, self, varargin{:});
     end
     function self = Importer(varargin)
     %IMPORTER 
@@ -253,14 +253,14 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(889, varargin{:});
+        tmp = casadiMEX(886, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(890, self);
+          casadiMEX(887, self);
           self.SwigClear();
         end
     end
@@ -272,7 +272,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(875, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(872, varargin{:});
     end
     function varargout = test_cast(varargin)
     %TEST_CAST 
@@ -280,7 +280,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  bool = TEST_CAST(casadi::SharedObjectInternal const * ptr)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(876, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(873, varargin{:});
     end
     function varargout = has_plugin(varargin)
     %HAS_PLUGIN 
@@ -288,7 +288,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  bool = HAS_PLUGIN(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(877, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(874, varargin{:});
     end
     function varargout = load_plugin(varargin)
     %LOAD_PLUGIN 
@@ -296,7 +296,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  LOAD_PLUGIN(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(878, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(875, varargin{:});
     end
     function varargout = doc(varargin)
     %DOC 
@@ -304,7 +304,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  char = DOC(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(879, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(876, varargin{:});
     end
     function varargout = deserialize(varargin)
     %DESERIALIZE 
@@ -312,7 +312,7 @@ classdef  Importer < casadi.SharedObject & casadi.PrintableCommon
     %  Importer = DESERIALIZE(casadi::DeserializingStream & s)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(888, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(885, varargin{:});
     end
   end
 end

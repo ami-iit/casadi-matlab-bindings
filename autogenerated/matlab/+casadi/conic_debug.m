@@ -7,5 +7,5 @@ function varargout = conic_debug(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(800, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(797, varargin{:});
 end

@@ -8,5 +8,5 @@ function varargout = shared(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(869, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(866, varargin{:});
 end
