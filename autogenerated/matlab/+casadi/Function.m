@@ -371,7 +371,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(678, self);
+          casadiMEX(675, self);
           self.SwigClear();
         end
     end
@@ -384,7 +384,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(679, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(676, self, varargin{:});
     end
     function varargout = n_in(self,varargin)
     %N_IN Get the number of function inputs.
@@ -394,7 +394,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(680, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(677, self, varargin{:});
     end
     function varargout = n_out(self,varargin)
     %N_OUT Get the number of function outputs.
@@ -404,7 +404,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(681, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(678, self, varargin{:});
     end
     function varargout = size1_in(self,varargin)
     %SIZE1_IN Get input dimension.
@@ -415,7 +415,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(682, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(679, self, varargin{:});
     end
     function varargout = size2_in(self,varargin)
     %SIZE2_IN Get input dimension.
@@ -426,7 +426,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(683, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(680, self, varargin{:});
     end
     function varargout = size_in(self,varargin)
     %SIZE_IN Get input dimension.
@@ -437,7 +437,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(684, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(681, self, varargin{:});
     end
     function varargout = size1_out(self,varargin)
     %SIZE1_OUT Get output dimension.
@@ -448,7 +448,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(685, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(682, self, varargin{:});
     end
     function varargout = size2_out(self,varargin)
     %SIZE2_OUT Get output dimension.
@@ -459,7 +459,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(686, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(683, self, varargin{:});
     end
     function varargout = size_out(self,varargin)
     %SIZE_OUT Get output dimension.
@@ -470,7 +470,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(687, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(684, self, varargin{:});
     end
     function varargout = nnz_in(self,varargin)
     %NNZ_IN Get number of input nonzeros.
@@ -484,7 +484,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(688, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(685, self, varargin{:});
     end
     function varargout = nnz_out(self,varargin)
     %NNZ_OUT Get number of output nonzeros.
@@ -498,7 +498,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(689, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(686, self, varargin{:});
     end
     function varargout = numel_in(self,varargin)
     %NUMEL_IN Get number of input elements.
@@ -512,7 +512,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(690, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(687, self, varargin{:});
     end
     function varargout = numel_out(self,varargin)
     %NUMEL_OUT Get number of output elements.
@@ -526,7 +526,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(691, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(688, self, varargin{:});
     end
     function varargout = name_in(self,varargin)
     %NAME_IN Get input scheme name by index.
@@ -567,7 +567,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(692, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(689, self, varargin{:});
     end
     function varargout = name_out(self,varargin)
     %NAME_OUT Get output scheme name by index.
@@ -608,7 +608,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(693, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(690, self, varargin{:});
     end
     function varargout = index_in(self,varargin)
     %INDEX_IN Find the index for a string describing a particular entry of an input
@@ -622,7 +622,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(694, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(691, self, varargin{:});
     end
     function varargout = index_out(self,varargin)
     %INDEX_OUT Find the index for a string describing a particular entry of an output
@@ -636,7 +636,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(695, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(692, self, varargin{:});
     end
     function varargout = default_in(self,varargin)
     %DEFAULT_IN Get default input value.
@@ -646,7 +646,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(696, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(693, self, varargin{:});
     end
     function varargout = max_in(self,varargin)
     %MAX_IN Get largest input value.
@@ -656,7 +656,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(697, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(694, self, varargin{:});
     end
     function varargout = min_in(self,varargin)
     %MIN_IN Get smallest input value.
@@ -666,7 +666,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(698, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(695, self, varargin{:});
     end
     function varargout = sparsity_in(self,varargin)
     %SPARSITY_IN Get sparsity of a given input.
@@ -677,7 +677,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(699, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(696, self, varargin{:});
     end
     function varargout = sparsity_out(self,varargin)
     %SPARSITY_OUT Get sparsity of a given output.
@@ -688,7 +688,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(700, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(697, self, varargin{:});
     end
     function varargout = is_diff_in(self,varargin)
     %IS_DIFF_IN Get differentiability of inputs/output.
@@ -699,7 +699,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(701, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(698, self, varargin{:});
     end
     function varargout = is_diff_out(self,varargin)
     %IS_DIFF_OUT Get differentiability of inputs/output.
@@ -710,7 +710,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(702, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(699, self, varargin{:});
     end
     function varargout = factory(self,varargin)
     %FACTORY 
@@ -718,7 +718,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = FACTORY(self, char name, {char} s_in, {char} s_out, struct:{char} aux, struct opts)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(703, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(700, self, varargin{:});
     end
     function varargout = oracle(self,varargin)
     %ORACLE Get oracle.
@@ -728,7 +728,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(704, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(701, self, varargin{:});
     end
     function varargout = wrap(self,varargin)
     %WRAP Wrap in an Function instance consisting of only one MX call.
@@ -738,7 +738,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(705, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(702, self, varargin{:});
     end
     function varargout = wrap_as_needed(self,varargin)
     %WRAP_AS_NEEDED Wrap in a Function with options.
@@ -748,7 +748,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(706, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(703, self, varargin{:});
     end
     function varargout = which_depends(self,varargin)
     %WHICH_DEPENDS Which variables enter with some order.
@@ -765,7 +765,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(707, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(704, self, varargin{:});
     end
     function varargout = print_dimensions(self,varargin)
     %PRINT_DIMENSIONS Print dimensions of inputs and outputs.
@@ -775,7 +775,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(708, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(705, self, varargin{:});
     end
     function varargout = print_options(self,varargin)
     %PRINT_OPTIONS Print options to a stream.
@@ -785,7 +785,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(709, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(706, self, varargin{:});
     end
     function varargout = print_option(self,varargin)
     %PRINT_OPTION Print all information there is to know about a certain option.
@@ -795,7 +795,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(710, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(707, self, varargin{:});
     end
     function varargout = uses_output(self,varargin)
     %USES_OUTPUT Do the derivative functions need nondifferentiated outputs?
@@ -805,7 +805,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(711, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(708, self, varargin{:});
     end
     function varargout = jacobian_old(self,varargin)
     %JACOBIAN_OLD Generate a Jacobian function of output oind with respect to input iind.
@@ -824,7 +824,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(712, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(709, self, varargin{:});
     end
     function varargout = hessian_old(self,varargin)
     %HESSIAN_OLD Generate a Hessian function of output oind with respect to input iind.
@@ -843,7 +843,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(713, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(710, self, varargin{:});
     end
     function varargout = jacobian(self,varargin)
     %JACOBIAN Generate a Jacobian function of all the inputs elements with respect to all
@@ -854,7 +854,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(714, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(711, self, varargin{:});
     end
     function varargout = jac(self,varargin)
     %JAC Calculate all Jacobian blocks Generates a function that takes all non-
@@ -872,7 +872,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(715, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(712, self, varargin{:});
     end
     function varargout = call(self,varargin)
     %CALL Generate a Jacobian function of output oind with respect to input iind.
@@ -939,7 +939,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(716, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(713, self, varargin{:});
     end
     function varargout = mapsum(self,varargin)
     %MAPSUM Evaluate symbolically in parallel and sum (matrix graph)
@@ -954,7 +954,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(717, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(714, self, varargin{:});
     end
     function varargout = mapaccum(self,varargin)
     %MAPACCUM Create a mapaccumulated version of this function.
@@ -1015,7 +1015,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(718, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(715, self, varargin{:});
     end
     function varargout = fold(self,varargin)
     %FOLD Create a mapaccumulated version of this function.
@@ -1072,7 +1072,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(719, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(716, self, varargin{:});
     end
     function varargout = map(self,varargin)
     %MAP Map with reduction A subset of the inputs are non-repeated and a subset of
@@ -1164,7 +1164,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(720, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(717, self, varargin{:});
     end
     function varargout = slice(self,varargin)
     %SLICE returns a new function with a selection of inputs/outputs of the original
@@ -1174,7 +1174,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(721, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(718, self, varargin{:});
     end
     function varargout = forward(self,varargin)
     %FORWARD Get a function that calculates nfwd forward derivatives.
@@ -1195,7 +1195,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(725, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(722, self, varargin{:});
     end
     function varargout = reverse(self,varargin)
     %REVERSE Get a function that calculates nadj adjoint derivatives.
@@ -1218,7 +1218,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(726, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(723, self, varargin{:});
     end
     function varargout = sparsity_jac(self,varargin)
     %SPARSITY_JAC Get, if necessary generate, the sparsity of a Jacobian block
@@ -1231,7 +1231,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(727, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(724, self, varargin{:});
     end
     function varargout = generate(self,varargin)
     %GENERATE Export / Generate C code for the function.
@@ -1242,7 +1242,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(728, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(725, self, varargin{:});
     end
     function varargout = generate_dependencies(self,varargin)
     %GENERATE_DEPENDENCIES Export / Generate C code for the dependency function.
@@ -1252,7 +1252,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(729, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(726, self, varargin{:});
     end
     function varargout = generate_in(self,varargin)
     %GENERATE_IN Export an input file that can be passed to generate C code with a main.
@@ -1265,7 +1265,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(730, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(727, self, varargin{:});
     end
     function varargout = generate_out(self,varargin)
     %GENERATE_OUT Export an output file that can be checked with generated C code output.
@@ -1278,7 +1278,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(731, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(728, self, varargin{:});
     end
     function varargout = serialize(self,varargin)
     %SERIALIZE Serialize.
@@ -1288,7 +1288,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(732, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(729, self, varargin{:});
     end
     function varargout = save(self,varargin)
     %SAVE Export function in specific language.
@@ -1300,7 +1300,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(733, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(730, self, varargin{:});
     end
     function varargout = export_code(self,varargin)
     %EXPORT_CODE Export function in specific language.
@@ -1313,7 +1313,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(734, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(731, self, varargin{:});
     end
     function varargout = stats(self,varargin)
     %STATS Get all statistics obtained at the end of the last evaluate call.
@@ -1323,7 +1323,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(735, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(732, self, varargin{:});
     end
     function varargout = sx_in(self,varargin)
     %SX_IN Get symbolic primitives equivalent to the input expressions There is no
@@ -1336,7 +1336,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(736, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(733, self, varargin{:});
     end
     function varargout = mx_in(self,varargin)
     %MX_IN Get symbolic primitives equivalent to the input expressions There is no
@@ -1349,7 +1349,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(737, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(734, self, varargin{:});
     end
     function varargout = sx_out(self,varargin)
     %SX_OUT Get symbolic primitives equivalent to the output expressions There is no
@@ -1362,7 +1362,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(738, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(735, self, varargin{:});
     end
     function varargout = mx_out(self,varargin)
     %MX_OUT Get symbolic primitives equivalent to the output expressions There is no
@@ -1375,7 +1375,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(739, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(736, self, varargin{:});
     end
     function varargout = nz_from_in(self,varargin)
     %NZ_FROM_IN Convert from/to flat vector of input/output nonzeros.
@@ -1385,7 +1385,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(740, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(737, self, varargin{:});
     end
     function varargout = nz_from_out(self,varargin)
     %NZ_FROM_OUT Convert from/to flat vector of input/output nonzeros.
@@ -1395,7 +1395,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(741, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(738, self, varargin{:});
     end
     function varargout = nz_to_in(self,varargin)
     %NZ_TO_IN Convert from/to flat vector of input/output nonzeros.
@@ -1405,7 +1405,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(742, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(739, self, varargin{:});
     end
     function varargout = nz_to_out(self,varargin)
     %NZ_TO_OUT Convert from/to flat vector of input/output nonzeros.
@@ -1415,7 +1415,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(743, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(740, self, varargin{:});
     end
     function varargout = convert_in(self,varargin)
     %CONVERT_IN Convert from/to input/output lists/map.
@@ -1433,7 +1433,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(744, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(741, self, varargin{:});
     end
     function varargout = convert_out(self,varargin)
     %CONVERT_OUT Convert from/to input/output lists/map.
@@ -1451,7 +1451,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(745, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(742, self, varargin{:});
     end
     function varargout = has_free(self,varargin)
     %HAS_FREE Does the function have free variables.
@@ -1461,7 +1461,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(746, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(743, self, varargin{:});
     end
     function varargout = get_free(self,varargin)
     %GET_FREE Get free variables as a string.
@@ -1471,7 +1471,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(747, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(744, self, varargin{:});
     end
     function varargout = free_sx(self,varargin)
     %FREE_SX Get all the free variables of the function.
@@ -1481,7 +1481,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(748, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(745, self, varargin{:});
     end
     function varargout = free_mx(self,varargin)
     %FREE_MX Get all the free variables of the function.
@@ -1491,7 +1491,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(749, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(746, self, varargin{:});
     end
     function varargout = generate_lifted(self,varargin)
     %GENERATE_LIFTED Extract the functions needed for the Lifted Newton method.
@@ -1501,7 +1501,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(750, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(747, self, varargin{:});
     end
     function varargout = n_nodes(self,varargin)
     %N_NODES Number of nodes in the algorithm.
@@ -1511,7 +1511,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(751, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(748, self, varargin{:});
     end
     function varargout = n_instructions(self,varargin)
     %N_INSTRUCTIONS Number of instruction in the algorithm (SXFunction/MXFunction)
@@ -1521,7 +1521,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(752, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(749, self, varargin{:});
     end
     function varargout = instruction_id(self,varargin)
     %INSTRUCTION_ID Identifier index of the instruction (SXFunction/MXFunction)
@@ -1531,7 +1531,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(753, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(750, self, varargin{:});
     end
     function varargout = instruction_input(self,varargin)
     %INSTRUCTION_INPUT Locations in the work vector for the inputs of the instruction
@@ -1542,7 +1542,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(754, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(751, self, varargin{:});
     end
     function varargout = instruction_constant(self,varargin)
     %INSTRUCTION_CONSTANT Get the floating point output argument of an instruction ( SXFunction)
@@ -1552,7 +1552,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(755, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(752, self, varargin{:});
     end
     function varargout = instruction_output(self,varargin)
     %INSTRUCTION_OUTPUT Location in the work vector for the output of the instruction
@@ -1563,7 +1563,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(756, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(753, self, varargin{:});
     end
     function varargout = instruction_MX(self,varargin)
     %INSTRUCTION_MX Get the MX node corresponding to an instruction ( MXFunction)
@@ -1573,7 +1573,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(757, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(754, self, varargin{:});
     end
     function varargout = instructions_sx(self,varargin)
     %INSTRUCTIONS_SX Get the SX node corresponding to all instructions ( SXFunction)
@@ -1586,7 +1586,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(758, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(755, self, varargin{:});
     end
     function varargout = has_spfwd(self,varargin)
     %HAS_SPFWD Is the class able to propagate seeds through the algorithm?
@@ -1596,7 +1596,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(759, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(756, self, varargin{:});
     end
     function varargout = has_sprev(self,varargin)
     %HAS_SPREV Is the class able to propagate seeds through the algorithm?
@@ -1606,7 +1606,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(760, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(757, self, varargin{:});
     end
     function varargout = sz_arg(self,varargin)
     %SZ_ARG Get required length of arg field.
@@ -1616,7 +1616,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(761, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(758, self, varargin{:});
     end
     function varargout = sz_res(self,varargin)
     %SZ_RES Get required length of res field.
@@ -1626,7 +1626,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(762, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(759, self, varargin{:});
     end
     function varargout = sz_iw(self,varargin)
     %SZ_IW Get required length of iw field.
@@ -1636,7 +1636,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(763, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(760, self, varargin{:});
     end
     function varargout = sz_w(self,varargin)
     %SZ_W Get required length of w field.
@@ -1646,7 +1646,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(764, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(761, self, varargin{:});
     end
     function varargout = name(self,varargin)
     %NAME Name of the function.
@@ -1656,7 +1656,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(765, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(762, self, varargin{:});
     end
     function varargout = is_a(self,varargin)
     %IS_A Check if the function is of a particular type Optionally check if name
@@ -1667,7 +1667,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(766, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(763, self, varargin{:});
     end
     function varargout = assert_size_in(self,varargin)
     %ASSERT_SIZE_IN Assert that an input dimension is equal so some given value.
@@ -1677,7 +1677,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(771, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(768, self, varargin{:});
     end
     function varargout = assert_size_out(self,varargin)
     %ASSERT_SIZE_OUT Assert that an output dimension is equal so some given value.
@@ -1687,7 +1687,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(772, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(769, self, varargin{:});
     end
     function varargout = checkout(self,varargin)
     %CHECKOUT Checkout a memory object.
@@ -1697,7 +1697,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(773, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(770, self, varargin{:});
     end
     function varargout = release(self,varargin)
     %RELEASE Release a memory object.
@@ -1707,7 +1707,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(774, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(771, self, varargin{:});
     end
     function varargout = get_function(self,varargin)
     %GET_FUNCTION 
@@ -1716,7 +1716,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = GET_FUNCTION(self, char name)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(775, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(772, self, varargin{:});
     end
     function varargout = has_function(self,varargin)
     %HAS_FUNCTION 
@@ -1724,7 +1724,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  bool = HAS_FUNCTION(self, char fname)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(776, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(773, self, varargin{:});
     end
     function varargout = info(self,varargin)
     %INFO Obtain information about function
@@ -1734,7 +1734,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(777, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(774, self, varargin{:});
     end
 
      function s = saveobj(obj)
@@ -1858,7 +1858,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(778, varargin{:});
+        tmp = casadiMEX(775, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
@@ -1871,7 +1871,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(676, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(673, varargin{:});
     end
     function varargout = jit(varargin)
     %JIT To resolve ambiguity on some compilers.
@@ -1903,7 +1903,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(677, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(674, varargin{:});
     end
     function varargout = conditional(varargin)
     %CONDITIONAL 
@@ -1911,7 +1911,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = CONDITIONAL(char name, {Function} f, Function f_def, struct opts)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(722, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(719, varargin{:});
     end
     function varargout = bspline(varargin)
     %BSPLINE 
@@ -1919,7 +1919,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = BSPLINE(char name, {[double]} knots, [double] coeffs, [int] degree, int m, struct opts)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(723, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(720, varargin{:});
     end
     function varargout = if_else(varargin)
     %IF_ELSE 
@@ -1927,7 +1927,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = IF_ELSE(char name, Function f_true, Function f_false, struct opts)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(724, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(721, varargin{:});
     end
     function varargout = check_name(varargin)
     %CHECK_NAME 
@@ -1935,7 +1935,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  bool = CHECK_NAME(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(767, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(764, varargin{:});
     end
     function varargout = fix_name(varargin)
     %FIX_NAME 
@@ -1943,7 +1943,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  char = FIX_NAME(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(768, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(765, varargin{:});
     end
     function varargout = load(varargin)
     %LOAD 
@@ -1951,7 +1951,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = LOAD(char filename)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(769, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(766, varargin{:});
     end
     function varargout = deserialize(varargin)
     %DESERIALIZE 
@@ -1961,7 +1961,7 @@ classdef  Function < casadi.SharedObject & casadi.PrintableCommon
     %  Function = DESERIALIZE(char s)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(770, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(767, varargin{:});
     end
 
      function obj = loadobj(s)

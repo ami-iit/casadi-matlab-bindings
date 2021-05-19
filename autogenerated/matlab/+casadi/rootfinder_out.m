@@ -37,5 +37,5 @@ function varargout = rootfinder_out(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(815, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(812, varargin{:});
 end

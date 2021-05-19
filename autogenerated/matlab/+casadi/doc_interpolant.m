@@ -6,5 +6,5 @@ function varargout = doc_interpolant(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(858, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(855, varargin{:});
 end

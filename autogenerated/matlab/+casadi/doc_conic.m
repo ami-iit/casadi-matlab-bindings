@@ -6,5 +6,5 @@ function varargout = doc_conic(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(799, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(796, varargin{:});
 end

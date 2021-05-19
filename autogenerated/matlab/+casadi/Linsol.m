@@ -241,7 +241,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(828, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(825, self, varargin{:});
     end
     function varargout = sparsity(self,varargin)
     %SPARSITY Get linear system sparsity.
@@ -251,7 +251,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(829, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(826, self, varargin{:});
     end
     function varargout = sfact(self,varargin)
     %SFACT Symbolic factorization of the linear system, e.g. selecting pivots.
@@ -261,7 +261,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(830, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(827, self, varargin{:});
     end
     function varargout = nfact(self,varargin)
     %NFACT Numeric factorization of the linear system.
@@ -271,7 +271,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(831, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(828, self, varargin{:});
     end
     function varargout = solve(self,varargin)
     %SOLVE Solve linear system of equations
@@ -282,7 +282,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(832, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(829, self, varargin{:});
     end
     function varargout = neig(self,varargin)
     %NEIG Number of negative eigenvalues Not available for all solvers.
@@ -292,7 +292,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(833, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(830, self, varargin{:});
     end
     function varargout = rank(self,varargin)
     %RANK Matrix rank Not available for all solvers.
@@ -302,7 +302,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(834, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(831, self, varargin{:});
     end
     function varargout = stats(self,varargin)
     %STATS Get all statistics obtained at the end of the last evaluate call.
@@ -312,7 +312,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(835, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(832, self, varargin{:});
     end
     function self = Linsol(varargin)
     %LINSOL 
@@ -358,14 +358,14 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(836, varargin{:});
+        tmp = casadiMEX(833, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(837, self);
+          casadiMEX(834, self);
           self.SwigClear();
         end
     end
@@ -377,7 +377,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(824, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(821, varargin{:});
     end
     function varargout = has_plugin(varargin)
     %HAS_PLUGIN 
@@ -385,7 +385,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %  bool = HAS_PLUGIN(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(825, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(822, varargin{:});
     end
     function varargout = load_plugin(varargin)
     %LOAD_PLUGIN 
@@ -393,7 +393,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %  LOAD_PLUGIN(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(826, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(823, varargin{:});
     end
     function varargout = doc(varargin)
     %DOC 
@@ -401,7 +401,7 @@ classdef  Linsol < casadi.SharedObject & casadi.PrintableCommon
     %  char = DOC(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(827, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(824, varargin{:});
     end
   end
 end

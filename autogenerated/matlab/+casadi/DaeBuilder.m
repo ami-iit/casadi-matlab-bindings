@@ -90,91 +90,91 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
   methods
     function v = t(self)
-      v = casadiMEX(986, self);
+      v = casadiMEX(983, self);
     end
     function v = x(self)
-      v = casadiMEX(987, self);
+      v = casadiMEX(984, self);
     end
     function v = ode(self)
-      v = casadiMEX(988, self);
+      v = casadiMEX(985, self);
     end
     function v = lam_ode(self)
-      v = casadiMEX(989, self);
+      v = casadiMEX(986, self);
     end
     function v = s(self)
-      v = casadiMEX(990, self);
+      v = casadiMEX(987, self);
     end
     function v = sdot(self)
-      v = casadiMEX(991, self);
+      v = casadiMEX(988, self);
     end
     function v = dae(self)
-      v = casadiMEX(992, self);
+      v = casadiMEX(989, self);
     end
     function v = lam_dae(self)
-      v = casadiMEX(993, self);
+      v = casadiMEX(990, self);
     end
     function v = z(self)
-      v = casadiMEX(994, self);
+      v = casadiMEX(991, self);
     end
     function v = alg(self)
-      v = casadiMEX(995, self);
+      v = casadiMEX(992, self);
     end
     function v = lam_alg(self)
-      v = casadiMEX(996, self);
+      v = casadiMEX(993, self);
     end
     function v = q(self)
-      v = casadiMEX(997, self);
+      v = casadiMEX(994, self);
     end
     function v = quad(self)
-      v = casadiMEX(998, self);
+      v = casadiMEX(995, self);
     end
     function v = lam_quad(self)
-      v = casadiMEX(999, self);
+      v = casadiMEX(996, self);
     end
     function v = w(self)
-      v = casadiMEX(1000, self);
+      v = casadiMEX(997, self);
     end
     function v = wdef(self)
-      v = casadiMEX(1001, self);
+      v = casadiMEX(998, self);
     end
     function v = lam_wdef(self)
-      v = casadiMEX(1002, self);
+      v = casadiMEX(999, self);
     end
     function v = y(self)
-      v = casadiMEX(1003, self);
+      v = casadiMEX(1000, self);
     end
     function v = ydef(self)
-      v = casadiMEX(1004, self);
+      v = casadiMEX(1001, self);
     end
     function v = lam_ydef(self)
-      v = casadiMEX(1005, self);
+      v = casadiMEX(1002, self);
     end
     function v = u(self)
-      v = casadiMEX(1006, self);
+      v = casadiMEX(1003, self);
     end
     function v = p(self)
-      v = casadiMEX(1007, self);
+      v = casadiMEX(1004, self);
     end
     function v = c(self)
-      v = casadiMEX(1008, self);
+      v = casadiMEX(1005, self);
     end
     function v = cdef(self)
-      v = casadiMEX(1009, self);
+      v = casadiMEX(1006, self);
     end
     function v = d(self)
-      v = casadiMEX(1010, self);
+      v = casadiMEX(1007, self);
     end
     function v = ddef(self)
-      v = casadiMEX(1011, self);
+      v = casadiMEX(1008, self);
     end
     function v = lam_ddef(self)
-      v = casadiMEX(1012, self);
+      v = casadiMEX(1009, self);
     end
     function v = aux(self)
-      v = casadiMEX(1013, self);
+      v = casadiMEX(1010, self);
     end
     function v = init(self)
-      v = casadiMEX(1014, self);
+      v = casadiMEX(1011, self);
     end
     function varargout = add_p(self,varargin)
     %ADD_P Add a new parameter
@@ -184,7 +184,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1015, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1012, self, varargin{:});
     end
     function varargout = add_u(self,varargin)
     %ADD_U Add a new control.
@@ -194,7 +194,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1016, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1013, self, varargin{:});
     end
     function varargout = add_x(self,varargin)
     %ADD_X Add a new differential state.
@@ -204,7 +204,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1017, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1014, self, varargin{:});
     end
     function varargout = add_s(self,varargin)
     %ADD_S Add a implicit state.
@@ -214,7 +214,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1018, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1015, self, varargin{:});
     end
     function varargout = add_z(self,varargin)
     %ADD_Z Add a new algebraic variable.
@@ -224,7 +224,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1019, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1016, self, varargin{:});
     end
     function varargout = add_q(self,varargin)
     %ADD_Q Add a new quadrature state.
@@ -234,7 +234,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1020, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1017, self, varargin{:});
     end
     function varargout = add_d(self,varargin)
     %ADD_D Add a new dependent parameter.
@@ -244,7 +244,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1021, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1018, self, varargin{:});
     end
     function varargout = add_y(self,varargin)
     %ADD_Y Add a new output.
@@ -254,7 +254,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1022, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1019, self, varargin{:});
     end
     function varargout = add_ode(self,varargin)
     %ADD_ODE Add an ordinary differential equation.
@@ -264,7 +264,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1023, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1020, self, varargin{:});
     end
     function varargout = add_dae(self,varargin)
     %ADD_DAE Add a differential-algebraic equation.
@@ -274,7 +274,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1024, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1021, self, varargin{:});
     end
     function varargout = add_alg(self,varargin)
     %ADD_ALG Add an algebraic equation.
@@ -284,7 +284,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1025, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1022, self, varargin{:});
     end
     function varargout = add_quad(self,varargin)
     %ADD_QUAD Add a quadrature equation.
@@ -294,7 +294,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1026, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1023, self, varargin{:});
     end
     function varargout = add_aux(self,varargin)
     %ADD_AUX Add an auxiliary variable.
@@ -304,7 +304,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1027, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1024, self, varargin{:});
     end
     function varargout = sanity_check(self,varargin)
     %SANITY_CHECK Check if dimensions match.
@@ -314,7 +314,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1028, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1025, self, varargin{:});
     end
     function varargout = split_dae(self,varargin)
     %SPLIT_DAE Identify and separate the algebraic variables and equations in the DAE.
@@ -324,7 +324,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1029, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1026, self, varargin{:});
     end
     function varargout = eliminate_alg(self,varargin)
     %ELIMINATE_ALG Eliminate algebraic variables and equations transforming them into outputs.
@@ -334,7 +334,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1030, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1027, self, varargin{:});
     end
     function varargout = make_semi_explicit(self,varargin)
     %MAKE_SEMI_EXPLICIT Transform the implicit DAE to a semi-explicit DAE.
@@ -344,7 +344,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1031, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1028, self, varargin{:});
     end
     function varargout = make_explicit(self,varargin)
     %MAKE_EXPLICIT Transform the implicit DAE or semi-explicit DAE into an explicit ODE.
@@ -354,7 +354,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1032, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1029, self, varargin{:});
     end
     function varargout = sort_d(self,varargin)
     %SORT_D Sort dependent parameters.
@@ -364,7 +364,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1033, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1030, self, varargin{:});
     end
     function varargout = split_d(self,varargin)
     %SPLIT_D Eliminate interdependencies amongst dependent parameters.
@@ -374,7 +374,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1034, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1031, self, varargin{:});
     end
     function varargout = eliminate_d(self,varargin)
     %ELIMINATE_D Eliminate dependent parameters.
@@ -384,7 +384,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1035, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1032, self, varargin{:});
     end
     function varargout = eliminate_quad(self,varargin)
     %ELIMINATE_QUAD Eliminate quadrature states and turn them into ODE states.
@@ -394,7 +394,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1036, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1033, self, varargin{:});
     end
     function varargout = sort_dae(self,varargin)
     %SORT_DAE Sort the DAE and implicitly defined states.
@@ -404,7 +404,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1037, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1034, self, varargin{:});
     end
     function varargout = sort_alg(self,varargin)
     %SORT_ALG Sort the algebraic equations and algebraic states.
@@ -414,7 +414,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1038, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1035, self, varargin{:});
     end
     function varargout = scale_variables(self,varargin)
     %SCALE_VARIABLES Scale the variables.
@@ -424,7 +424,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1039, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1036, self, varargin{:});
     end
     function varargout = scale_equations(self,varargin)
     %SCALE_EQUATIONS Scale the implicit equations.
@@ -434,7 +434,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1040, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1037, self, varargin{:});
     end
     function varargout = add_fun(self,varargin)
     %ADD_FUN Add an external function.
@@ -491,7 +491,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1041, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1038, self, varargin{:});
     end
     function varargout = has_fun(self,varargin)
     %HAS_FUN Does a particular function already exist?
@@ -501,7 +501,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1042, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1039, self, varargin{:});
     end
     function varargout = fun(self,varargin)
     %FUN Get function by name.
@@ -511,7 +511,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1043, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1040, self, varargin{:});
     end
     function varargout = parse_fmi(self,varargin)
     %PARSE_FMI Import existing problem from FMI/XML
@@ -521,7 +521,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1044, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1041, self, varargin{:});
     end
     function varargout = add_lc(self,varargin)
     %ADD_LC Add a named linear combination of output expressions.
@@ -531,7 +531,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1045, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1042, self, varargin{:});
     end
     function varargout = create(self,varargin)
     %CREATE Construct a function object.
@@ -541,7 +541,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1046, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1043, self, varargin{:});
     end
     function varargout = var(self,varargin)
     %VAR Get variable expression by name.
@@ -551,7 +551,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1047, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1044, self, varargin{:});
     end
     function varargout = paren(self,varargin)
     %PAREN 
@@ -559,7 +559,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %  MX = PAREN(self, char name)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1048, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1045, self, varargin{:});
     end
     function varargout = der(self,varargin)
     %DER Get a derivative expression by non-differentiated expression.
@@ -600,7 +600,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1049, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1046, self, varargin{:});
     end
     function varargout = nominal(self,varargin)
     %NOMINAL Get the nominal value(s) by expression.
@@ -641,7 +641,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1050, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1047, self, varargin{:});
     end
     function varargout = set_nominal(self,varargin)
     %SET_NOMINAL Set the nominal value(s) by expression.
@@ -682,7 +682,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1051, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1048, self, varargin{:});
     end
     function varargout = min(self,varargin)
     %MIN Get the lower bound(s) by expression.
@@ -723,7 +723,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1052, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1049, self, varargin{:});
     end
     function varargout = set_min(self,varargin)
     %SET_MIN Set the lower bound(s) by expression.
@@ -764,7 +764,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1053, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1050, self, varargin{:});
     end
     function varargout = max(self,varargin)
     %MAX Get the upper bound(s) by expression.
@@ -805,7 +805,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1054, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1051, self, varargin{:});
     end
     function varargout = set_max(self,varargin)
     %SET_MAX Set the upper bound(s) by expression.
@@ -846,7 +846,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1055, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1052, self, varargin{:});
     end
     function varargout = guess(self,varargin)
     %GUESS Get the initial guess(es) by expression.
@@ -887,7 +887,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1056, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1053, self, varargin{:});
     end
     function varargout = set_guess(self,varargin)
     %SET_GUESS Set the initial guess(es) by expression.
@@ -928,7 +928,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1057, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1054, self, varargin{:});
     end
     function varargout = start(self,varargin)
     %START Get the (optionally normalized) value(s) at time 0 by expression.
@@ -969,7 +969,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1058, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1055, self, varargin{:});
     end
     function varargout = set_start(self,varargin)
     %SET_START Set the (optionally normalized) value(s) at time 0 by expression.
@@ -1010,7 +1010,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1059, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1056, self, varargin{:});
     end
     function varargout = derivative_start(self,varargin)
     %DERIVATIVE_START Get the (optionally normalized) derivative value(s) at time 0 by expression.
@@ -1051,7 +1051,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1060, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1057, self, varargin{:});
     end
     function varargout = set_derivative_start(self,varargin)
     %SET_DERIVATIVE_START Set the (optionally normalized) derivative value(s) at time 0 by expression.
@@ -1092,7 +1092,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1061, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1058, self, varargin{:});
     end
     function varargout = unit(self,varargin)
     %UNIT Get the unit given a vector of symbolic variables (all units must be
@@ -1135,7 +1135,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1062, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1059, self, varargin{:});
     end
     function varargout = set_unit(self,varargin)
     %SET_UNIT Set the unit for a component.
@@ -1145,7 +1145,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1063, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1060, self, varargin{:});
     end
     function varargout = type_name(self,varargin)
     %TYPE_NAME Readable name of the class.
@@ -1155,7 +1155,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1064, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1061, self, varargin{:});
     end
     function varargout = disp(self,varargin)
     %DISP Print representation.
@@ -1165,7 +1165,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1065, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1062, self, varargin{:});
     end
     function varargout = str(self,varargin)
     %STR Get string representation.
@@ -1175,7 +1175,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1066, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1063, self, varargin{:});
     end
     function varargout = add_variable(self,varargin)
     %ADD_VARIABLE Add a new variable: returns corresponding symbolic expression.
@@ -1218,7 +1218,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1067, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1064, self, varargin{:});
     end
     function varargout = variable(self,varargin)
     %VARIABLE Access a variable by name
@@ -1229,7 +1229,7 @@ classdef  DaeBuilder < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1068, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1065, self, varargin{:});
     end
     function self = DaeBuilder(varargin)
     %DAEBUILDER 
@@ -1243,14 +1243,14 @@ classdef  DaeBuilder < casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1069, varargin{:});
+        tmp = casadiMEX(1066, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1070, self);
+          casadiMEX(1067, self);
           self.SwigClear();
         end
     end

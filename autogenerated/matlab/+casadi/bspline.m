@@ -7,5 +7,5 @@ function varargout = bspline(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(873, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(870, varargin{:});
 end

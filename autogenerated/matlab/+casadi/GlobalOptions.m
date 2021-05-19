@@ -26,14 +26,14 @@ classdef  GlobalOptions < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(925, varargin{:});
+        tmp = casadiMEX(922, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(926, self);
+          casadiMEX(923, self);
           self.SwigClear();
         end
     end
@@ -45,7 +45,7 @@ classdef  GlobalOptions < SwigRef
     %  SETSIMPLIFICATIONONTHEFLY(bool flag)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(915, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(912, varargin{:});
     end
     function varargout = getSimplificationOnTheFly(varargin)
     %GETSIMPLIFICATIONONTHEFLY 
@@ -53,7 +53,7 @@ classdef  GlobalOptions < SwigRef
     %  bool = GETSIMPLIFICATIONONTHEFLY()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(916, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(913, varargin{:});
     end
     function varargout = setHierarchicalSparsity(varargin)
     %SETHIERARCHICALSPARSITY 
@@ -61,7 +61,7 @@ classdef  GlobalOptions < SwigRef
     %  SETHIERARCHICALSPARSITY(bool flag)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(917, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(914, varargin{:});
     end
     function varargout = getHierarchicalSparsity(varargin)
     %GETHIERARCHICALSPARSITY 
@@ -69,7 +69,7 @@ classdef  GlobalOptions < SwigRef
     %  bool = GETHIERARCHICALSPARSITY()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(918, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(915, varargin{:});
     end
     function varargout = setCasadiPath(varargin)
     %SETCASADIPATH 
@@ -77,7 +77,7 @@ classdef  GlobalOptions < SwigRef
     %  SETCASADIPATH(char path)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(919, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(916, varargin{:});
     end
     function varargout = getCasadiPath(varargin)
     %GETCASADIPATH 
@@ -85,7 +85,7 @@ classdef  GlobalOptions < SwigRef
     %  char = GETCASADIPATH()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(920, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(917, varargin{:});
     end
     function varargout = setCasadiIncludePath(varargin)
     %SETCASADIINCLUDEPATH 
@@ -93,7 +93,7 @@ classdef  GlobalOptions < SwigRef
     %  SETCASADIINCLUDEPATH(char path)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(921, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(918, varargin{:});
     end
     function varargout = getCasadiIncludePath(varargin)
     %GETCASADIINCLUDEPATH 
@@ -101,7 +101,7 @@ classdef  GlobalOptions < SwigRef
     %  char = GETCASADIINCLUDEPATH()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(922, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(919, varargin{:});
     end
     function varargout = setMaxNumDir(varargin)
     %SETMAXNUMDIR 
@@ -109,7 +109,7 @@ classdef  GlobalOptions < SwigRef
     %  SETMAXNUMDIR(int ndir)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(923, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(920, varargin{:});
     end
     function varargout = getMaxNumDir(varargin)
     %GETMAXNUMDIR 
@@ -117,7 +117,7 @@ classdef  GlobalOptions < SwigRef
     %  int = GETMAXNUMDIR()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(924, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(921, varargin{:});
     end
   end
 end

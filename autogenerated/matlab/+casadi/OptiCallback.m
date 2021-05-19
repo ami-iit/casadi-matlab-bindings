@@ -19,9 +19,9 @@ classdef  OptiCallback < SwigRef
         end
       else
         if strcmp(class(self),'director_basic.OptiCallback')
-          tmp = casadiMEX(1199, 0, varargin{:});
+          tmp = casadiMEX(1196, 0, varargin{:});
         else
-          tmp = casadiMEX(1199, self, varargin{:});
+          tmp = casadiMEX(1196, self, varargin{:});
         end
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
@@ -33,11 +33,11 @@ classdef  OptiCallback < SwigRef
     %  CALL(self, int i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1200, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1197, self, varargin{:});
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1201, self);
+          casadiMEX(1198, self);
           self.SwigClear();
         end
     end

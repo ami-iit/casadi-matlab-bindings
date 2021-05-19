@@ -6,7 +6,7 @@ classdef  OptiAdvanced < casadi.Opti
   methods
     function delete(self)
         if self.swigPtr
-          casadiMEX(1202, self);
+          casadiMEX(1199, self);
           self.SwigClear();
         end
     end
@@ -18,7 +18,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1203, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1200, self, varargin{:});
     end
     function varargout = is_parametric(self,varargin)
     %IS_PARAMETRIC return true if expression is only dependant on Opti parameters, not
@@ -29,7 +29,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1204, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1201, self, varargin{:});
     end
     function varargout = symvar(self,varargin)
     %SYMVAR Get symbols present in expression.
@@ -44,7 +44,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1205, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1202, self, varargin{:});
     end
     function varargout = canon_expr(self,varargin)
     %CANON_EXPR Interpret an expression (for internal use only)
@@ -54,7 +54,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1206, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1203, self, varargin{:});
     end
     function varargout = get_meta(self,varargin)
     %GET_META Get meta-data of symbol (for internal use only)
@@ -64,7 +64,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1207, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1204, self, varargin{:});
     end
     function varargout = get_meta_con(self,varargin)
     %GET_META_CON Get meta-data of symbol (for internal use only)
@@ -74,7 +74,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1208, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1205, self, varargin{:});
     end
     function varargout = set_meta(self,varargin)
     %SET_META Set meta-data of an expression.
@@ -84,7 +84,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1209, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1206, self, varargin{:});
     end
     function varargout = set_meta_con(self,varargin)
     %SET_META_CON Set meta-data of an expression.
@@ -94,7 +94,7 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1210, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1207, self, varargin{:});
     end
     function varargout = assert_active_symbol(self,varargin)
     %ASSERT_ACTIVE_SYMBOL 
@@ -102,7 +102,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  ASSERT_ACTIVE_SYMBOL(self, MX m)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1211, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1208, self, varargin{:});
     end
     function varargout = active_symvar(self,varargin)
     %ACTIVE_SYMVAR 
@@ -110,7 +110,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  {MX} = ACTIVE_SYMVAR(self, casadi::VariableType type)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1212, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1209, self, varargin{:});
     end
     function varargout = active_values(self,varargin)
     %ACTIVE_VALUES 
@@ -118,7 +118,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  {DM} = ACTIVE_VALUES(self, casadi::VariableType type)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1213, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1210, self, varargin{:});
     end
     function varargout = x_lookup(self,varargin)
     %X_LOOKUP 
@@ -126,7 +126,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  MX = X_LOOKUP(self, index i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1214, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1211, self, varargin{:});
     end
     function varargout = g_lookup(self,varargin)
     %G_LOOKUP 
@@ -134,7 +134,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  MX = G_LOOKUP(self, index i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1215, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1212, self, varargin{:});
     end
     function varargout = x_describe(self,varargin)
     %X_DESCRIBE 
@@ -142,7 +142,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  char = X_DESCRIBE(self, index i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1216, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1213, self, varargin{:});
     end
     function varargout = g_describe(self,varargin)
     %G_DESCRIBE 
@@ -150,7 +150,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  char = G_DESCRIBE(self, index i)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1217, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1214, self, varargin{:});
     end
     function varargout = describe(self,varargin)
     %DESCRIBE 
@@ -158,7 +158,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  char = DESCRIBE(self, MX x, index indent)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1218, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1215, self, varargin{:});
     end
     function varargout = show_infeasibilities(self,varargin)
     %SHOW_INFEASIBILITIES 
@@ -166,7 +166,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  SHOW_INFEASIBILITIES(self, double tol)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1219, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1216, self, varargin{:});
     end
     function varargout = solve_prepare(self,varargin)
     %SOLVE_PREPARE 
@@ -174,7 +174,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  SOLVE_PREPARE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1220, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1217, self, varargin{:});
     end
     function varargout = solve_actual(self,varargin)
     %SOLVE_ACTUAL 
@@ -182,7 +182,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  struct:DM = SOLVE_ACTUAL(self, struct:DM args)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1221, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1218, self, varargin{:});
     end
     function varargout = arg(self,varargin)
     %ARG 
@@ -190,7 +190,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  struct:DM = ARG(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1222, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1219, self, varargin{:});
     end
     function varargout = res(self,varargin)
     %RES 
@@ -199,7 +199,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  RES(self, struct:DM res)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1223, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1220, self, varargin{:});
     end
     function varargout = constraints(self,varargin)
     %CONSTRAINTS 
@@ -207,7 +207,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  {MX} = CONSTRAINTS(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1224, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1221, self, varargin{:});
     end
     function varargout = objective(self,varargin)
     %OBJECTIVE 
@@ -215,7 +215,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  MX = OBJECTIVE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1225, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1222, self, varargin{:});
     end
     function varargout = baked_copy(self,varargin)
     %BAKED_COPY 
@@ -223,7 +223,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  OptiAdvanced = BAKED_COPY(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1226, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1223, self, varargin{:});
     end
     function varargout = assert_empty(self,varargin)
     %ASSERT_EMPTY 
@@ -231,7 +231,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  ASSERT_EMPTY(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1227, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1224, self, varargin{:});
     end
     function varargout = bake(self,varargin)
     %BAKE Fix the structure of the optimization problem.
@@ -241,10 +241,10 @@ classdef  OptiAdvanced < casadi.Opti
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1228, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1225, self, varargin{:});
     end
     function v = problem_dirty_(self)
-      v = casadiMEX(1229, self);
+      v = casadiMEX(1226, self);
     end
     function varargout = mark_problem_dirty(self,varargin)
     %MARK_PROBLEM_DIRTY 
@@ -252,7 +252,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  MARK_PROBLEM_DIRTY(self, bool flag)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1230, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1227, self, varargin{:});
     end
     function varargout = problem_dirty(self,varargin)
     %PROBLEM_DIRTY 
@@ -260,10 +260,10 @@ classdef  OptiAdvanced < casadi.Opti
     %  bool = PROBLEM_DIRTY(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1231, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1228, self, varargin{:});
     end
     function v = solver_dirty_(self)
-      v = casadiMEX(1232, self);
+      v = casadiMEX(1229, self);
     end
     function varargout = mark_solver_dirty(self,varargin)
     %MARK_SOLVER_DIRTY 
@@ -271,7 +271,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  MARK_SOLVER_DIRTY(self, bool flag)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1233, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1230, self, varargin{:});
     end
     function varargout = solver_dirty(self,varargin)
     %SOLVER_DIRTY 
@@ -279,10 +279,10 @@ classdef  OptiAdvanced < casadi.Opti
     %  bool = SOLVER_DIRTY(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1234, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1231, self, varargin{:});
     end
     function v = solved_(self)
-      v = casadiMEX(1235, self);
+      v = casadiMEX(1232, self);
     end
     function varargout = mark_solved(self,varargin)
     %MARK_SOLVED 
@@ -290,7 +290,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  MARK_SOLVED(self, bool flag)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1236, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1233, self, varargin{:});
     end
     function varargout = solved(self,varargin)
     %SOLVED 
@@ -298,7 +298,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  bool = SOLVED(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1237, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1234, self, varargin{:});
     end
     function varargout = assert_solved(self,varargin)
     %ASSERT_SOLVED 
@@ -306,7 +306,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  ASSERT_SOLVED(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1238, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1235, self, varargin{:});
     end
     function varargout = assert_baked(self,varargin)
     %ASSERT_BAKED 
@@ -314,7 +314,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  ASSERT_BAKED(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1239, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1236, self, varargin{:});
     end
     function varargout = instance_number(self,varargin)
     %INSTANCE_NUMBER 
@@ -322,7 +322,7 @@ classdef  OptiAdvanced < casadi.Opti
     %  int = INSTANCE_NUMBER(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1240, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1237, self, varargin{:});
     end
     function self = OptiAdvanced(varargin)
     %OPTIADVANCED 
@@ -336,7 +336,7 @@ classdef  OptiAdvanced < casadi.Opti
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1241, varargin{:});
+        tmp = casadiMEX(1238, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end

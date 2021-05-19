@@ -17,7 +17,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = PLUS(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(349, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(348, varargin{:});
     end
     function varargout = minus(varargin)
     %MINUS 
@@ -28,7 +28,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = MINUS(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(350, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(349, varargin{:});
     end
     function varargout = times(varargin)
     %TIMES 
@@ -39,7 +39,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = TIMES(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(351, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(350, varargin{:});
     end
     function varargout = rdivide(varargin)
     %RDIVIDE 
@@ -50,7 +50,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = RDIVIDE(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(352, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(351, varargin{:});
     end
     function varargout = ldivide(varargin)
     %LDIVIDE 
@@ -61,7 +61,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = LDIVIDE(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(353, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(352, varargin{:});
     end
     function varargout = lt(varargin)
     %LT 
@@ -72,7 +72,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = LT(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(354, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(353, varargin{:});
     end
     function varargout = le(varargin)
     %LE 
@@ -83,7 +83,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = LE(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(355, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(354, varargin{:});
     end
     function varargout = gt(varargin)
     %GT 
@@ -94,7 +94,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = GT(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(356, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(355, varargin{:});
     end
     function varargout = ge(varargin)
     %GE 
@@ -105,7 +105,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = GE(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(357, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(356, varargin{:});
     end
     function varargout = eq(varargin)
     %EQ 
@@ -116,7 +116,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = EQ(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(358, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(357, varargin{:});
     end
     function varargout = ne(varargin)
     %NE 
@@ -127,7 +127,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = NE(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(359, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(358, varargin{:});
     end
     function varargout = and(varargin)
     %AND 
@@ -138,7 +138,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = AND(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(360, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(359, varargin{:});
     end
     function varargout = or(varargin)
     %OR 
@@ -149,7 +149,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = OR(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(361, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(360, varargin{:});
     end
     function varargout = not(varargin)
     %NOT 
@@ -160,7 +160,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = NOT(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(362, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(361, varargin{:});
     end
     function varargout = abs(varargin)
     %ABS 
@@ -171,7 +171,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ABS(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(363, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(362, varargin{:});
     end
     function varargout = sqrt(varargin)
     %SQRT 
@@ -182,7 +182,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = SQRT(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(364, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(363, varargin{:});
     end
     function varargout = sin(varargin)
     %SIN 
@@ -193,7 +193,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = SIN(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(365, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(364, varargin{:});
     end
     function varargout = cos(varargin)
     %COS 
@@ -204,7 +204,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = COS(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(366, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(365, varargin{:});
     end
     function varargout = tan(varargin)
     %TAN 
@@ -215,7 +215,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = TAN(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(367, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(366, varargin{:});
     end
     function varargout = atan(varargin)
     %ATAN 
@@ -226,7 +226,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ATAN(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(368, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(367, varargin{:});
     end
     function varargout = asin(varargin)
     %ASIN 
@@ -237,7 +237,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ASIN(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(369, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(368, varargin{:});
     end
     function varargout = acos(varargin)
     %ACOS 
@@ -248,7 +248,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ACOS(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(370, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(369, varargin{:});
     end
     function varargout = tanh(varargin)
     %TANH 
@@ -259,7 +259,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = TANH(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(371, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(370, varargin{:});
     end
     function varargout = sinh(varargin)
     %SINH 
@@ -270,7 +270,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = SINH(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(372, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(371, varargin{:});
     end
     function varargout = cosh(varargin)
     %COSH 
@@ -281,7 +281,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = COSH(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(373, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(372, varargin{:});
     end
     function varargout = atanh(varargin)
     %ATANH 
@@ -292,7 +292,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ATANH(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(374, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(373, varargin{:});
     end
     function varargout = asinh(varargin)
     %ASINH 
@@ -303,7 +303,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ASINH(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(375, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(374, varargin{:});
     end
     function varargout = acosh(varargin)
     %ACOSH 
@@ -314,7 +314,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ACOSH(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(376, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(375, varargin{:});
     end
     function varargout = exp(varargin)
     %EXP 
@@ -325,7 +325,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = EXP(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(377, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(376, varargin{:});
     end
     function varargout = log(varargin)
     %LOG 
@@ -336,7 +336,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = LOG(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(378, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(377, varargin{:});
     end
     function varargout = log10(varargin)
     %LOG10 
@@ -347,7 +347,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = LOG10(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(379, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(378, varargin{:});
     end
     function varargout = floor(varargin)
     %FLOOR 
@@ -358,7 +358,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = FLOOR(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(380, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(379, varargin{:});
     end
     function varargout = ceil(varargin)
     %CEIL 
@@ -369,7 +369,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = CEIL(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(381, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(380, varargin{:});
     end
     function varargout = erf(varargin)
     %ERF 
@@ -380,7 +380,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ERF(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(382, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(381, varargin{:});
     end
     function varargout = erfinv(varargin)
     %ERFINV 
@@ -391,7 +391,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ERFINV(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(383, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(382, varargin{:});
     end
     function varargout = sign(varargin)
     %SIGN 
@@ -402,7 +402,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = SIGN(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(384, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(383, varargin{:});
     end
     function varargout = power(varargin)
     %POWER 
@@ -413,7 +413,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = POWER(MX x, MX n)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(385, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(384, varargin{:});
     end
     function varargout = mod(varargin)
     %MOD 
@@ -424,7 +424,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = MOD(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(386, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(385, varargin{:});
     end
     function varargout = fmod(varargin)
     %FMOD 
@@ -435,7 +435,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = FMOD(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(387, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(386, varargin{:});
     end
     function varargout = atan2(varargin)
     %ATAN2 
@@ -446,7 +446,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = ATAN2(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(388, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(387, varargin{:});
     end
     function varargout = fmin(varargin)
     %FMIN 
@@ -457,7 +457,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = FMIN(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(389, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(388, varargin{:});
     end
     function varargout = fmax(varargin)
     %FMAX 
@@ -468,7 +468,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = FMAX(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(390, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(389, varargin{:});
     end
     function varargout = simplify(varargin)
     %SIMPLIFY 
@@ -479,7 +479,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = SIMPLIFY(MX x)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(391, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(390, varargin{:});
     end
     function varargout = is_equal(varargin)
     %IS_EQUAL 
@@ -490,7 +490,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  bool = IS_EQUAL(MX x, MX y, int depth)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(392, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(391, varargin{:});
     end
     function varargout = copysign(varargin)
     %COPYSIGN 
@@ -501,7 +501,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = COPYSIGN(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(393, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(392, varargin{:});
     end
     function varargout = constpow(varargin)
     %CONSTPOW 
@@ -512,7 +512,7 @@ classdef  GenericExpressionCommon < SwigRef
     %  MX = CONSTPOW(MX x, MX y)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(394, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(393, varargin{:});
     end
     function self = GenericExpressionCommon(varargin)
     %GENERICEXPRESSIONCOMMON 
@@ -525,14 +525,14 @@ classdef  GenericExpressionCommon < SwigRef
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(395, varargin{:});
+        tmp = casadiMEX(394, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(396, self);
+          casadiMEX(395, self);
           self.SwigClear();
         end
     end

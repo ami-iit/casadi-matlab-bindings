@@ -33,5 +33,5 @@ function varargout = detect_simple_bounds(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(946, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(943, varargin{:});
 end

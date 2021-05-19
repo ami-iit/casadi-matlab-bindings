@@ -510,5 +510,5 @@ function varargout = dplesol(varargin)
     %.............
     %
     %
-  [varargout{1:nargout}] = casadiMEX(841, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(838, varargin{:});
 end

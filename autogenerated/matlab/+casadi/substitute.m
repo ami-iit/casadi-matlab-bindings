@@ -11,5 +11,5 @@ function varargout = substitute(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(867, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(864, varargin{:});
 end

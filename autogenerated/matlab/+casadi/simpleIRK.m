@@ -24,5 +24,5 @@ function varargout = simpleIRK(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(944, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(941, varargin{:});
 end

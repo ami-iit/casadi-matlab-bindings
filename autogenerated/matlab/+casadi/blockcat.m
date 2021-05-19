@@ -6,5 +6,5 @@ function varargout = blockcat(varargin)
     %  MX = BLOCKCAT({{MX}} v)
     %
     %
-  [varargout{1:nargout}] = casadiMEX(870, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(867, varargin{:});
 end

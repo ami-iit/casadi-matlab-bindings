@@ -47,17 +47,6 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     function this = swig_this(self)
       this = casadiMEX(3, self);
     end
-    function varargout = sanity_check(self,varargin)
-    %SANITY_CHECK [DEPRECATED] Correctness of sparsity patterns are checked during
-    %
-    %  SANITY_CHECK(self, bool complete)
-    %
-    %construction
-    %
-    %
-    %
-      [varargout{1:nargout}] = casadiMEX(83, self, varargin{:});
-    end
     function varargout = get_diag(self,varargin)
     %GET_DIAG Get the diagonal of the matrix/create a diagonal matrix (mapping will
     %
@@ -69,7 +58,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(84, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(83, self, varargin{:});
     end
     function varargout = compress(self,varargin)
     %COMPRESS Compress a sparsity pattern.
@@ -79,7 +68,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(85, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(84, self, varargin{:});
     end
     function varargout = is_equal(self,varargin)
     %IS_EQUAL 
@@ -88,7 +77,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  bool = IS_EQUAL(self, int nrow, int ncol, [int] colind, [int] row)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(86, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(85, self, varargin{:});
     end
     function varargout = eq(self,varargin)
     %EQ 
@@ -96,7 +85,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  bool = EQ(self, Sparsity y)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(87, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(86, self, varargin{:});
     end
     function varargout = ne(self,varargin)
     %NE 
@@ -104,7 +93,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  bool = NE(self, Sparsity y)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(88, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(87, self, varargin{:});
     end
     function varargout = is_stacked(self,varargin)
     %IS_STACKED Check if pattern is horizontal repeat of another.
@@ -114,7 +103,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(89, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(88, self, varargin{:});
     end
     function varargout = size1(self,varargin)
     %SIZE1 Get the number of rows.
@@ -124,7 +113,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(90, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(89, self, varargin{:});
     end
     function varargout = rows(self,varargin)
     %ROWS Get the number of rows, Octave-style syntax.
@@ -134,7 +123,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(91, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(90, self, varargin{:});
     end
     function varargout = size2(self,varargin)
     %SIZE2 Get the number of columns.
@@ -144,7 +133,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(92, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(91, self, varargin{:});
     end
     function varargout = columns(self,varargin)
     %COLUMNS Get the number of columns, Octave-style syntax.
@@ -154,7 +143,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(93, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(92, self, varargin{:});
     end
     function varargout = numel(self,varargin)
     %NUMEL The total number of elements, including structural zeros, i.e.
@@ -167,7 +156,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(94, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(93, self, varargin{:});
     end
     function varargout = density(self,varargin)
     %DENSITY The percentage of nonzero Equivalent to (100.0 * nnz())/numel(), but avoids
@@ -178,7 +167,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(95, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(94, self, varargin{:});
     end
     function varargout = is_empty(self,varargin)
     %IS_EMPTY Check if the sparsity is empty.
@@ -191,7 +180,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(96, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(95, self, varargin{:});
     end
     function varargout = nnz(self,varargin)
     %NNZ Get the number of (structural) non-zeros.
@@ -203,7 +192,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(97, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(96, self, varargin{:});
     end
     function varargout = nnz_upper(self,varargin)
     %NNZ_UPPER Number of non-zeros in the upper triangular half, i.e. the number of
@@ -214,7 +203,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(98, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(97, self, varargin{:});
     end
     function varargout = nnz_lower(self,varargin)
     %NNZ_LOWER Number of non-zeros in the lower triangular half, i.e. the number of
@@ -225,7 +214,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(99, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(98, self, varargin{:});
     end
     function varargout = nnz_diag(self,varargin)
     %NNZ_DIAG Number of non-zeros on the diagonal, i.e. the number of elements (i, j) with
@@ -236,7 +225,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(100, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(99, self, varargin{:});
     end
     function varargout = bw_upper(self,varargin)
     %BW_UPPER Upper half-bandwidth.
@@ -246,7 +235,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(101, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(100, self, varargin{:});
     end
     function varargout = bw_lower(self,varargin)
     %BW_LOWER Lower half-bandwidth.
@@ -256,7 +245,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(102, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(101, self, varargin{:});
     end
     function varargout = size(self,varargin)
     %SIZE Get the size along a particular dimensions.
@@ -297,7 +286,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      out = casadiMEX(103, self, varargin{:});
+      out = casadiMEX(102, self, varargin{:});
       if nargout<=1
         varargout{1}=out;
       else
@@ -315,7 +304,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(104, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(103, self, varargin{:});
     end
     function varargout = to_file(self,varargin)
     %TO_FILE Export sparsity pattern to file
@@ -327,7 +316,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(105, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(104, self, varargin{:});
     end
     function varargout = serialize(self,varargin)
     %SERIALIZE Serialize an object.
@@ -368,7 +357,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(107, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(106, self, varargin{:});
     end
     function varargout = colind(self,varargin)
     %COLIND Get a reference to the colindex of column cc (see class description)
@@ -410,7 +399,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(109, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(108, self, varargin{:});
     end
     function varargout = row(self,varargin)
     %ROW Get the row of a non-zero element.
@@ -454,7 +443,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(110, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(109, self, varargin{:});
     end
     function varargout = get_col(self,varargin)
     %GET_COL Get the column for each non-zero entry Together with the row-vector, this
@@ -466,7 +455,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(111, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(110, self, varargin{:});
     end
     function varargout = resize(self,varargin)
     %RESIZE Resize.
@@ -476,7 +465,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(112, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(111, self, varargin{:});
     end
     function varargout = add_nz(self,varargin)
     %ADD_NZ Get the index of a non-zero element Add the element if it does not exist and
@@ -487,7 +476,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(113, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(112, self, varargin{:});
     end
     function varargout = has_nz(self,varargin)
     %HAS_NZ Returns true if the pattern has a non-zero at location rr, cc.
@@ -497,7 +486,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(114, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(113, self, varargin{:});
     end
     function varargout = get_nz(self,varargin)
     %GET_NZ Get the nonzero index for a set of elements The index vector is used both
@@ -559,7 +548,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(115, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(114, self, varargin{:});
     end
     function varargout = get_lower(self,varargin)
     %GET_LOWER Get nonzeros in lower triangular part.
@@ -569,7 +558,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(116, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(115, self, varargin{:});
     end
     function varargout = get_upper(self,varargin)
     %GET_UPPER Get nonzeros in upper triangular part.
@@ -579,7 +568,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(117, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(116, self, varargin{:});
     end
     function varargout = get_ccs(self,varargin)
     %GET_CCS Get the sparsity in compressed column storage (CCS) format.
@@ -589,7 +578,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(118, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(117, self, varargin{:});
     end
     function varargout = get_crs(self,varargin)
     %GET_CRS Get the sparsity in compressed row storage (CRS) format.
@@ -599,7 +588,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(119, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(118, self, varargin{:});
     end
     function varargout = get_triplet(self,varargin)
     %GET_TRIPLET Get the sparsity in sparse triplet format.
@@ -609,7 +598,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(120, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(119, self, varargin{:});
     end
     function varargout = sub(self,varargin)
     %SUB Get a set of elements.
@@ -659,7 +648,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(121, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(120, self, varargin{:});
     end
     function varargout = T(self,varargin)
     %T Transpose the matrix.
@@ -669,7 +658,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(122, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(121, self, varargin{:});
     end
     function varargout = transpose(self,varargin)
     %TRANSPOSE Transpose the matrix and get the reordering of the non-zero entries.
@@ -685,7 +674,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(123, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(122, self, varargin{:});
     end
     function varargout = is_transpose(self,varargin)
     %IS_TRANSPOSE Check if the sparsity is the transpose of another.
@@ -695,7 +684,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(124, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(123, self, varargin{:});
     end
     function varargout = is_reshape(self,varargin)
     %IS_RESHAPE Check if the sparsity is a reshape of another.
@@ -705,7 +694,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(125, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(124, self, varargin{:});
     end
     function varargout = combine(self,varargin)
     %COMBINE Combine two sparsity patterns Returns the new sparsity pattern as well as a
@@ -720,7 +709,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(126, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(125, self, varargin{:});
     end
     function varargout = unite(self,varargin)
     %UNITE Union of two sparsity patterns.
@@ -730,7 +719,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(127, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(126, self, varargin{:});
     end
     function varargout = plus(self,varargin)
     %PLUS 
@@ -738,7 +727,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  Sparsity = PLUS(self, Sparsity b)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(128, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(127, self, varargin{:});
     end
     function varargout = intersect(self,varargin)
     %INTERSECT Intersection of two sparsity patterns Returns the new sparsity pattern as
@@ -751,7 +740,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(129, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(128, self, varargin{:});
     end
     function varargout = mtimes(self,varargin)
     %MTIMES 
@@ -759,7 +748,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  Sparsity = MTIMES(self, Sparsity b)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(130, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(129, self, varargin{:});
     end
     function varargout = is_subset(self,varargin)
     %IS_SUBSET Is subset?
@@ -769,7 +758,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(131, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(130, self, varargin{:});
     end
     function varargout = pattern_inverse(self,varargin)
     %PATTERN_INVERSE Take the inverse of a sparsity pattern; flip zeros and non-zeros.
@@ -779,7 +768,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(132, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(131, self, varargin{:});
     end
     function varargout = enlarge(self,varargin)
     %ENLARGE Enlarge matrix Make the matrix larger by inserting empty rows and columns,
@@ -796,7 +785,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(133, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(132, self, varargin{:});
     end
     function varargout = enlargeRows(self,varargin)
     %ENLARGEROWS Enlarge the matrix along the first dimension (i.e. insert rows)
@@ -806,7 +795,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(134, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(133, self, varargin{:});
     end
     function varargout = enlargeColumns(self,varargin)
     %ENLARGECOLUMNS Enlarge the matrix along the second dimension (i.e. insert columns)
@@ -816,7 +805,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(135, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(134, self, varargin{:});
     end
     function varargout = makeDense(self,varargin)
     %MAKEDENSE Make a patten dense.
@@ -826,7 +815,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(136, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(135, self, varargin{:});
     end
     function varargout = erase(self,varargin)
     %ERASE Erase elements of a matrix.
@@ -867,7 +856,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(137, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(136, self, varargin{:});
     end
     function varargout = append(self,varargin)
     %APPEND Append another sparsity patten vertically (NOTE: only efficient if vector)
@@ -877,7 +866,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(138, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(137, self, varargin{:});
     end
     function varargout = appendColumns(self,varargin)
     %APPENDCOLUMNS Append another sparsity patten horizontally.
@@ -887,7 +876,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(139, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(138, self, varargin{:});
     end
     function varargout = is_scalar(self,varargin)
     %IS_SCALAR Is scalar?
@@ -897,7 +886,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(140, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(139, self, varargin{:});
     end
     function varargout = is_dense(self,varargin)
     %IS_DENSE Is dense?
@@ -907,7 +896,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(141, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(140, self, varargin{:});
     end
     function varargout = is_row(self,varargin)
     %IS_ROW Check if the pattern is a row vector (i.e. size1()==1)
@@ -917,7 +906,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(142, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(141, self, varargin{:});
     end
     function varargout = is_column(self,varargin)
     %IS_COLUMN Check if the pattern is a column vector (i.e. size2()==1)
@@ -927,7 +916,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(143, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(142, self, varargin{:});
     end
     function varargout = is_vector(self,varargin)
     %IS_VECTOR Check if the pattern is a row or column vector.
@@ -937,7 +926,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(144, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(143, self, varargin{:});
     end
     function varargout = is_diag(self,varargin)
     %IS_DIAG Is diagonal?
@@ -947,7 +936,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(145, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(144, self, varargin{:});
     end
     function varargout = is_square(self,varargin)
     %IS_SQUARE Is square?
@@ -957,7 +946,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(146, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(145, self, varargin{:});
     end
     function varargout = is_symmetric(self,varargin)
     %IS_SYMMETRIC Is symmetric?
@@ -967,7 +956,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(147, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(146, self, varargin{:});
     end
     function varargout = is_triu(self,varargin)
     %IS_TRIU Is upper triangular?
@@ -977,7 +966,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(148, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(147, self, varargin{:});
     end
     function varargout = is_tril(self,varargin)
     %IS_TRIL Is lower triangular?
@@ -987,7 +976,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(149, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(148, self, varargin{:});
     end
     function varargout = is_singular(self,varargin)
     %IS_SINGULAR Check whether the sparsity-pattern indicates structural singularity.
@@ -997,7 +986,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(150, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(149, self, varargin{:});
     end
     function varargout = rowsSequential(self,varargin)
     %ROWSSEQUENTIAL Do the rows appear sequentially on each column.
@@ -1012,7 +1001,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(151, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(150, self, varargin{:});
     end
     function varargout = removeDuplicates(self,varargin)
     %REMOVEDUPLICATES Remove duplicate entries.
@@ -1025,7 +1014,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(152, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(151, self, varargin{:});
     end
     function varargout = etree(self,varargin)
     %ETREE Calculate the elimination tree See Direct Methods for Sparse Linear Systems
@@ -1041,7 +1030,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(153, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(152, self, varargin{:});
     end
     function varargout = ldl(self,varargin)
     %LDL Symbolic LDL factorization Returns the sparsity pattern of L^T.
@@ -1054,7 +1043,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(154, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(153, self, varargin{:});
     end
     function varargout = qr_sparse(self,varargin)
     %QR_SPARSE Symbolic QR factorization Returns the sparsity pattern of V (compact
@@ -1068,7 +1057,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(155, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(154, self, varargin{:});
     end
     function varargout = dfs(self,varargin)
     %DFS Depth-first search on the adjacency graph of the sparsity See Direct Methods
@@ -1079,7 +1068,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(156, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(155, self, varargin{:});
     end
     function varargout = scc(self,varargin)
     %SCC Find the strongly connected components of the bigraph defined by the
@@ -1107,7 +1096,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(157, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(156, self, varargin{:});
     end
     function varargout = btf(self,varargin)
     %BTF Calculate the block triangular form (BTF) See Direct Methods for Sparse
@@ -1133,7 +1122,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(158, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(157, self, varargin{:});
     end
     function varargout = amd(self,varargin)
     %AMD Approximate minimal degree preordering Fill-reducing ordering applied to the
@@ -1149,7 +1138,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(159, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(158, self, varargin{:});
     end
     function varargout = find(self,varargin)
     %FIND Get the location of all non-zero elements as they would appear in a Dense
@@ -1165,7 +1154,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(160, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(159, self, varargin{:});
     end
     function varargout = uni_coloring(self,varargin)
     %UNI_COLORING Perform a unidirectional coloring: A greedy distance-2 coloring algorithm
@@ -1176,7 +1165,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(161, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(160, self, varargin{:});
     end
     function varargout = star_coloring(self,varargin)
     %STAR_COLORING Perform a star coloring of a symmetric matrix: A greedy distance-2 coloring
@@ -1191,7 +1180,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(162, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(161, self, varargin{:});
     end
     function varargout = star_coloring2(self,varargin)
     %STAR_COLORING2 Perform a star coloring of a symmetric matrix: A new greedy distance-2
@@ -1206,7 +1195,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(163, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(162, self, varargin{:});
     end
     function varargout = largest_first(self,varargin)
     %LARGEST_FIRST Order the columns by decreasing degree.
@@ -1216,7 +1205,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(164, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(163, self, varargin{:});
     end
     function varargout = pmult(self,varargin)
     %PMULT Permute rows and/or columns Multiply the sparsity with a permutation matrix
@@ -1229,7 +1218,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(165, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(164, self, varargin{:});
     end
     function varargout = dim(self,varargin)
     %DIM Get the dimension as a string.
@@ -1239,7 +1228,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(166, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(165, self, varargin{:});
     end
     function varargout = postfix_dim(self,varargin)
     %POSTFIX_DIM Dimension string as a postfix to a name Rules:
@@ -1259,7 +1248,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(167, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(166, self, varargin{:});
     end
     function varargout = repr_el(self,varargin)
     %REPR_EL Describe the nonzero location k as a string.
@@ -1269,7 +1258,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(168, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(167, self, varargin{:});
     end
     function varargout = spy(self,varargin)
     %SPY Print a textual representation of sparsity.
@@ -1279,7 +1268,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(169, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(168, self, varargin{:});
     end
     function varargout = spy_matlab(self,varargin)
     %SPY_MATLAB Generate a script for Matlab or Octave which visualizes the sparsity using
@@ -1290,7 +1279,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(170, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(169, self, varargin{:});
     end
     function varargout = export_code(self,varargin)
     %EXPORT_CODE Export matrix in specific language.
@@ -1313,7 +1302,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(171, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(170, self, varargin{:});
     end
     function varargout = hash(self,varargin)
     %HASH 
@@ -1321,7 +1310,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  std::size_t = HASH(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(173, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(172, self, varargin{:});
     end
 
      function s = saveobj(obj)
@@ -1410,14 +1399,14 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(176, varargin{:});
+        tmp = casadiMEX(175, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(177, self);
+          casadiMEX(176, self);
           self.SwigClear();
         end
     end
@@ -1544,7 +1533,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  Sparsity = FROM_FILE(char filename, char format_hint)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(106, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(105, varargin{:});
     end
     function varargout = deserialize(varargin)
     %DESERIALIZE 
@@ -1554,7 +1543,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  Sparsity = DESERIALIZE(char s)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(108, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(107, varargin{:});
     end
     function varargout = type_name(varargin)
     %TYPE_NAME 
@@ -1562,7 +1551,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(172, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(171, varargin{:});
     end
     function varargout = test_cast(varargin)
     %TEST_CAST 
@@ -1570,7 +1559,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  bool = TEST_CAST(casadi::SharedObjectInternal const * ptr)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(174, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(173, varargin{:});
     end
     function varargout = kkt(varargin)
     %KKT 
@@ -1578,7 +1567,7 @@ classdef  Sparsity < casadi.SharedObject & casadi.SparsityInterfaceCommon & casa
     %  Sparsity = KKT(Sparsity H, Sparsity J, bool with_x_diag, bool with_lam_g_diag)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(175, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(174, varargin{:});
     end
 
      function obj = loadobj(s)

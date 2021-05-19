@@ -153,14 +153,14 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(599, varargin{:});
+        tmp = casadiMEX(596, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(600, self);
+          casadiMEX(597, self);
           self.SwigClear();
         end
     end
@@ -172,7 +172,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(601, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(598, self, varargin{:});
     end
     function varargout = sparsity(self,varargin)
     %SPARSITY Get an owning reference to the sparsity pattern.
@@ -182,7 +182,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(602, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(599, self, varargin{:});
     end
     function varargout = erase(self,varargin)
     %ERASE Erase a submatrix (leaving structural zeros in its place) Erase elements of
@@ -226,7 +226,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(603, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(600, self, varargin{:});
     end
     function varargout = enlarge(self,varargin)
     %ENLARGE Enlarge matrix Make the matrix larger by inserting empty rows and columns,
@@ -237,7 +237,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(604, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(601, self, varargin{:});
     end
     function varargout = uminus(self,varargin)
     %UMINUS 
@@ -245,7 +245,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = UMINUS(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(605, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(602, self, varargin{:});
     end
     function varargout = dep(self,varargin)
     %DEP Get the nth dependency as MX.
@@ -255,7 +255,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(606, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(603, self, varargin{:});
     end
     function varargout = n_out(self,varargin)
     %N_OUT Number of outputs.
@@ -265,7 +265,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(607, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(604, self, varargin{:});
     end
     function varargout = get_output(self,varargin)
     %GET_OUTPUT Get an output.
@@ -275,7 +275,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(608, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(605, self, varargin{:});
     end
     function varargout = n_dep(self,varargin)
     %N_DEP Get the number of dependencies of a binary SXElem.
@@ -285,7 +285,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(609, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(606, self, varargin{:});
     end
     function varargout = name(self,varargin)
     %NAME Get the name.
@@ -295,7 +295,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(610, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(607, self, varargin{:});
     end
     function varargout = to_double(self,varargin)
     %TO_DOUBLE 
@@ -303,7 +303,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  double = TO_DOUBLE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(611, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(608, self, varargin{:});
     end
     function varargout = to_DM(self,varargin)
     %TO_DM 
@@ -311,7 +311,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  DM = TO_DM(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(612, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(609, self, varargin{:});
     end
     function varargout = is_symbolic(self,varargin)
     %IS_SYMBOLIC Check if symbolic.
@@ -321,7 +321,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(613, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(610, self, varargin{:});
     end
     function varargout = is_constant(self,varargin)
     %IS_CONSTANT Check if constant.
@@ -331,7 +331,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(614, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(611, self, varargin{:});
     end
     function varargout = is_call(self,varargin)
     %IS_CALL Check if evaluation.
@@ -341,7 +341,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(615, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(612, self, varargin{:});
     end
     function varargout = which_function(self,varargin)
     %WHICH_FUNCTION Get function - only valid when is_call() is true.
@@ -351,7 +351,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(616, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(613, self, varargin{:});
     end
     function varargout = is_output(self,varargin)
     %IS_OUTPUT Check if evaluation output.
@@ -361,7 +361,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(617, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(614, self, varargin{:});
     end
     function varargout = which_output(self,varargin)
     %WHICH_OUTPUT Get the index of evaluation output - only valid when is_output() is true.
@@ -371,7 +371,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(618, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(615, self, varargin{:});
     end
     function varargout = is_op(self,varargin)
     %IS_OP Is it a certain operation.
@@ -381,7 +381,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(619, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(616, self, varargin{:});
     end
     function varargout = is_multiplication(self,varargin)
     %IS_MULTIPLICATION Check if multiplication.
@@ -391,7 +391,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(620, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(617, self, varargin{:});
     end
     function varargout = is_commutative(self,varargin)
     %IS_COMMUTATIVE Check if commutative operation.
@@ -401,7 +401,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(621, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(618, self, varargin{:});
     end
     function varargout = is_norm(self,varargin)
     %IS_NORM Check if norm.
@@ -411,7 +411,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(622, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(619, self, varargin{:});
     end
     function varargout = is_valid_input(self,varargin)
     %IS_VALID_INPUT Check if matrix can be used to define function inputs. Valid inputs for
@@ -422,7 +422,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(623, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(620, self, varargin{:});
     end
     function varargout = n_primitives(self,varargin)
     %N_PRIMITIVES Get the number of primitives for MXFunction inputs/outputs.
@@ -432,7 +432,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(624, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(621, self, varargin{:});
     end
     function varargout = primitives(self,varargin)
     %PRIMITIVES Get primitives.
@@ -442,7 +442,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(625, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(622, self, varargin{:});
     end
     function varargout = split_primitives(self,varargin)
     %SPLIT_PRIMITIVES Split up an expression along symbolic primitives.
@@ -452,7 +452,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(626, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(623, self, varargin{:});
     end
     function varargout = join_primitives(self,varargin)
     %JOIN_PRIMITIVES Join an expression along symbolic primitives.
@@ -462,7 +462,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(627, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(624, self, varargin{:});
     end
     function varargout = has_duplicates(self,varargin)
     %HAS_DUPLICATES [INTERNAL]  Detect duplicate symbolic expressions If there are symbolic
@@ -476,7 +476,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(628, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(625, self, varargin{:});
     end
     function varargout = reset_input(self,varargin)
     %RESET_INPUT [INTERNAL]  Reset the marker for an input expression.
@@ -486,7 +486,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(629, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(626, self, varargin{:});
     end
     function varargout = is_eye(self,varargin)
     %IS_EYE check if identity
@@ -496,7 +496,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(630, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(627, self, varargin{:});
     end
     function varargout = is_zero(self,varargin)
     %IS_ZERO check if zero (note that false negative answers are possible)
@@ -506,7 +506,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(631, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(628, self, varargin{:});
     end
     function varargout = is_one(self,varargin)
     %IS_ONE check if zero (note that false negative answers are possible)
@@ -516,7 +516,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(632, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(629, self, varargin{:});
     end
     function varargout = is_minus_one(self,varargin)
     %IS_MINUS_ONE check if zero (note that false negative answers are possible)
@@ -526,7 +526,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(633, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(630, self, varargin{:});
     end
     function varargout = is_transpose(self,varargin)
     %IS_TRANSPOSE Is the expression a transpose?
@@ -536,7 +536,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(634, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(631, self, varargin{:});
     end
     function varargout = is_regular(self,varargin)
     %IS_REGULAR Checks if expression does not contain NaN or Inf.
@@ -546,7 +546,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(635, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(632, self, varargin{:});
     end
     function varargout = is_binary(self,varargin)
     %IS_BINARY Is binary operation.
@@ -556,7 +556,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(636, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(633, self, varargin{:});
     end
     function varargout = is_unary(self,varargin)
     %IS_UNARY Is unary operation.
@@ -566,7 +566,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(637, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(634, self, varargin{:});
     end
     function varargout = op(self,varargin)
     %OP Get operation type.
@@ -576,7 +576,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(638, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(635, self, varargin{:});
     end
     function varargout = info(self,varargin)
     %INFO Obtain information about node
@@ -586,7 +586,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(639, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(636, self, varargin{:});
     end
     function varargout = serialize(self,varargin)
     %SERIALIZE Serialize an object.
@@ -596,7 +596,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(640, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(637, self, varargin{:});
     end
     function varargout = get_temp(self,varargin)
     %GET_TEMP [INTERNAL]  Get the temporary variable
@@ -606,7 +606,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(642, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(639, self, varargin{:});
     end
     function varargout = set_temp(self,varargin)
     %SET_TEMP [INTERNAL]  Set the temporary variable.
@@ -616,7 +616,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(643, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(640, self, varargin{:});
     end
     function varargout = get(self,varargin)
     %GET Get a submatrix, two arguments
@@ -693,7 +693,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(649, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(646, self, varargin{:});
     end
     function varargout = set(self,varargin)
     %SET 
@@ -738,7 +738,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(650, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(647, self, varargin{:});
     end
     function varargout = get_nz(self,varargin)
     %GET_NZ Get a set of nonzeros
@@ -785,7 +785,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(651, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(648, self, varargin{:});
     end
     function varargout = set_nz(self,varargin)
     %SET_NZ Set a set of nonzeros
@@ -826,7 +826,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(652, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(649, self, varargin{:});
     end
     function varargout = printme(self,varargin)
     %PRINTME 
@@ -834,7 +834,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = PRINTME(self, MX b)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(656, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(653, self, varargin{:});
     end
     function varargout = attachAssert(self,varargin)
     %ATTACHASSERT returns itself, but with an assertion attached
@@ -846,7 +846,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(657, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(654, self, varargin{:});
     end
     function varargout = monitor(self,varargin)
     %MONITOR Monitor an expression Returns itself, but with the side effect of printing
@@ -857,7 +857,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(658, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(655, self, varargin{:});
     end
     function varargout = T(self,varargin)
     %T Transpose the matrix.
@@ -867,7 +867,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(659, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(656, self, varargin{:});
     end
     function varargout = mapping(self,varargin)
     %MAPPING Get an IM representation of a GetNonzeros or SetNonzeros node.
@@ -877,7 +877,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(660, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(657, self, varargin{:});
     end
     function varargout = paren_asgn(self,varargin)
     %PAREN_ASGN 
@@ -891,7 +891,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  PAREN_ASGN(self, MX m, char rr, char cc)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(666, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(663, self, varargin{:});
     end
     function varargout = setbrace(self,varargin)
     %SETBRACE 
@@ -900,7 +900,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  SETBRACE(self, MX m, char rr)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(667, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(664, self, varargin{:});
     end
     function varargout = end(self,varargin)
     %END 
@@ -908,7 +908,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  int = END(self, int i, int n)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(668, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(665, self, varargin{:});
     end
     function varargout = numel(self,varargin)
     %NUMEL Get the number of elements.
@@ -949,7 +949,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %.............
     %
     %
-      [varargout{1:nargout}] = casadiMEX(669, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(666, self, varargin{:});
     end
     function varargout = ctranspose(self,varargin)
     %CTRANSPOSE 
@@ -957,7 +957,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = CTRANSPOSE(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(670, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(667, self, varargin{:});
     end
     function varargout = find(varargin)
     %FIND Find first nonzero If failed, returns the number of rows.
@@ -967,7 +967,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(671, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(668, varargin{:});
     end
     function varargout = low(varargin)
     %LOW Find first nonzero If failed, returns the number of rows.
@@ -977,7 +977,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(672, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(669, varargin{:});
     end
     function varargout = inv_node(varargin)
     %INV_NODE Inverse node.
@@ -987,7 +987,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(673, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(670, varargin{:});
     end
     function varargout = brace(self,varargin)
     %BRACE 
@@ -997,7 +997,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = BRACE(self, char rr)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(674, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(671, self, varargin{:});
     end
     function varargout = paren(self,varargin)
     %PAREN 
@@ -1015,7 +1015,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = PAREN(self, char rr, char cc)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(675, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(672, self, varargin{:});
     end
   end
   methods(Static)
@@ -1025,7 +1025,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(598, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(595, varargin{:});
     end
     function varargout = deserialize(varargin)
     %DESERIALIZE 
@@ -1033,7 +1033,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = DESERIALIZE(casadi::DeserializingStream & s)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(641, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(638, varargin{:});
     end
     function varargout = binary(varargin)
     %BINARY Create nodes by their ID.
@@ -1043,7 +1043,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(644, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(641, varargin{:});
     end
     function varargout = unary(varargin)
     %UNARY Create nodes by their ID.
@@ -1053,7 +1053,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(645, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(642, varargin{:});
     end
     function varargout = inf(varargin)
     %INF create a matrix with all inf
@@ -1065,7 +1065,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(646, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(643, varargin{:});
     end
     function varargout = nan(varargin)
     %NAN create a matrix with all nan
@@ -1077,7 +1077,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(647, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(644, varargin{:});
     end
     function varargout = eye(varargin)
     %EYE 
@@ -1085,7 +1085,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = EYE(int n)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(648, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(645, varargin{:});
     end
     function varargout = einstein(varargin)
     %EINSTEIN Computes an einstein dense tensor contraction.
@@ -1104,7 +1104,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(653, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(650, varargin{:});
     end
     function varargout = bspline_dual(varargin)
     %BSPLINE_DUAL Find first nonzero If failed, returns the number of rows.
@@ -1114,7 +1114,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %
     %
     %
-     [varargout{1:nargout}] = casadiMEX(654, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(651, varargin{:});
     end
     function varargout = interpn_linear(varargin)
     %INTERPN_LINEAR 
@@ -1122,7 +1122,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  MX = INTERPN_LINEAR({MX} x, MX v, {MX} xq, struct opts)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(655, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(652, varargin{:});
     end
     function varargout = set_max_depth(varargin)
     %SET_MAX_DEPTH 
@@ -1130,7 +1130,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  SET_MAX_DEPTH(int eq_depth)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(661, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(658, varargin{:});
     end
     function varargout = get_max_depth(varargin)
     %GET_MAX_DEPTH 
@@ -1138,7 +1138,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  int = GET_MAX_DEPTH()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(662, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(659, varargin{:});
     end
     function varargout = test_cast(varargin)
     %TEST_CAST 
@@ -1146,7 +1146,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  bool = TEST_CAST(casadi::SharedObjectInternal const * ptr)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(663, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(660, varargin{:});
     end
     function varargout = get_input(varargin)
     %GET_INPUT 
@@ -1154,7 +1154,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  {MX} = GET_INPUT(Function f)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(664, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(661, varargin{:});
     end
     function varargout = get_free(varargin)
     %GET_FREE 
@@ -1162,7 +1162,7 @@ classdef  MX < casadi.GenericExpressionCommon & casadi.PrintableCommon & casadi.
     %  {MX} = GET_FREE(Function f)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(665, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(662, varargin{:});
     end
   end
 end

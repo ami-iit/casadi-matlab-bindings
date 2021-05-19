@@ -13,7 +13,7 @@ classdef  XmlFile < casadi.SharedObject & casadi.PrintableCommon
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1072, self);
+          casadiMEX(1069, self);
           self.SwigClear();
         end
     end
@@ -31,7 +31,7 @@ classdef  XmlFile < casadi.SharedObject & casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1075, varargin{:});
+        tmp = casadiMEX(1072, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
@@ -44,7 +44,7 @@ classdef  XmlFile < casadi.SharedObject & casadi.PrintableCommon
     %  char = TYPE_NAME()
     %
     %
-     [varargout{1:nargout}] = casadiMEX(1071, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(1068, varargin{:});
     end
     function varargout = load_plugin(varargin)
     %LOAD_PLUGIN 
@@ -52,7 +52,7 @@ classdef  XmlFile < casadi.SharedObject & casadi.PrintableCommon
     %  LOAD_PLUGIN(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(1073, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(1070, varargin{:});
     end
     function varargout = doc(varargin)
     %DOC 
@@ -60,7 +60,7 @@ classdef  XmlFile < casadi.SharedObject & casadi.PrintableCommon
     %  char = DOC(char name)
     %
     %
-     [varargout{1:nargout}] = casadiMEX(1074, varargin{:});
+     [varargout{1:nargout}] = casadiMEX(1071, varargin{:});
     end
   end
 end

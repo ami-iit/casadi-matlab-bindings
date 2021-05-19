@@ -6,5 +6,5 @@ function varargout = has_integrator(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(781, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(778, varargin{:});
 end

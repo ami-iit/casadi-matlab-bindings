@@ -400,5 +400,5 @@ function varargout = expmsol(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(849, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(846, varargin{:});
 end

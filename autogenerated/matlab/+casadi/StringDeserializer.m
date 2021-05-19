@@ -20,14 +20,14 @@ classdef  StringDeserializer < casadi.DeserializerBase
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1130, varargin{:});
+        tmp = casadiMEX(1127, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1131, self);
+          casadiMEX(1128, self);
           self.SwigClear();
         end
     end
@@ -39,7 +39,7 @@ classdef  StringDeserializer < casadi.DeserializerBase
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1132, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1129, self, varargin{:});
     end
   end
   methods(Static)

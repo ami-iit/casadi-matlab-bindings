@@ -5,5 +5,5 @@ function varargout = qpsol(varargin)
     %  Function = QPSOL(char name, char solver, struct:MX qp, struct opts)
     %
     %
-  [varargout{1:nargout}] = casadiMEX(789, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(786, varargin{:});
 end

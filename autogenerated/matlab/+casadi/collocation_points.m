@@ -13,5 +13,5 @@ function varargout = collocation_points(varargin)
     %
     %
     %
-  [varargout{1:nargout}] = casadiMEX(940, varargin{:});
+  [varargout{1:nargout}] = casadiMEX(937, varargin{:});
 end

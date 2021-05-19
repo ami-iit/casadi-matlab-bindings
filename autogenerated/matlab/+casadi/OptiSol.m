@@ -17,7 +17,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %  char = TYPE_NAME(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1242, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1239, self, varargin{:});
     end
     function varargout = disp(self,varargin)
     %DISP 
@@ -25,7 +25,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %  std::ostream & = DISP(self, bool more)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1243, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1240, self, varargin{:});
     end
     function varargout = str(self,varargin)
     %STR 
@@ -33,7 +33,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %  char = STR(self, bool more)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1244, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1241, self, varargin{:});
     end
     function varargout = value(self,varargin)
     %VALUE Obtain value of expression at the current value
@@ -54,7 +54,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1245, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1242, self, varargin{:});
     end
     function varargout = value_variables(self,varargin)
     %VALUE_VARIABLES get assignment expressions for the optimal solution
@@ -64,7 +64,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1246, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1243, self, varargin{:});
     end
     function varargout = value_parameters(self,varargin)
     %VALUE_PARAMETERS 
@@ -72,7 +72,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %  {MX} = VALUE_PARAMETERS(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1247, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1244, self, varargin{:});
     end
     function varargout = stats(self,varargin)
     %STATS Get statistics.
@@ -85,7 +85,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1248, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1245, self, varargin{:});
     end
     function varargout = opti(self,varargin)
     %OPTI 
@@ -93,7 +93,7 @@ classdef  OptiSol < casadi.PrintableCommon
     %  Opti = OPTI(self)
     %
     %
-      [varargout{1:nargout}] = casadiMEX(1249, self, varargin{:});
+      [varargout{1:nargout}] = casadiMEX(1246, self, varargin{:});
     end
     function self = OptiSol(varargin)
     %OPTISOL 
@@ -107,14 +107,14 @@ classdef  OptiSol < casadi.PrintableCommon
           self.swigPtr = varargin{1}.swigPtr;
         end
       else
-        tmp = casadiMEX(1250, varargin{:});
+        tmp = casadiMEX(1247, varargin{:});
         self.swigPtr = tmp.swigPtr;
         tmp.SwigClear();
       end
     end
     function delete(self)
         if self.swigPtr
-          casadiMEX(1251, self);
+          casadiMEX(1248, self);
           self.SwigClear();
         end
     end
