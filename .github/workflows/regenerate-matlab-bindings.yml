@@ -58,7 +58,7 @@ jobs:
             # Compile casadi and generate MATLAB bindings
             mkdir build
             cd build
-            cmake -DWITH_IPOPT:BOOL=ON -DWITH_OCTAVE:BOOL=ON -DWITH_EXAMPLES:BOOL=OFF -DINCLUDE_PREFIX:PATH=include -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX:PATH=lib/cmake/casadi -DLIB_PREFIX:PATH=lib -DBIN_PREFIX:PATH=bin ..
+            cmake -DWITH_IPOPT:BOOL=ON -DWITH_DEPRECATED_FEATURES:BOOL=OFF -DWITH_OCTAVE:BOOL=ON -DWITH_EXAMPLES:BOOL=OFF -DINCLUDE_PREFIX:PATH=include -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX:PATH=lib/cmake/casadi -DLIB_PREFIX:PATH=lib -DBIN_PREFIX:PATH=bin ..
             make install
             # Copy the MATLAB files from the install directory 
             cd ${GITHUB_WORKSPACE}
