@@ -23,7 +23,7 @@ jobs:
             # Install CasADi dependencies
             apt-get update -y
             apt-get upgrade -y
-            apt-get install build-essential gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
+            apt-get install -y build-essential gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
              
         # From https://github.com/casadi/casadi/wiki/matlab
         - name: Install SWIG for that supports MATLAB required by CasADi
