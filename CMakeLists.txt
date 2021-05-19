@@ -62,6 +62,8 @@ if(CASADI_MATLAB_BINDINGS_USES_MATLAB)
       SRC ${MEX_FILES}
       NO_IMPLICIT_LINK_TO_MATLAB_LIBRARIES
       LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+  # Workaround for https://github.com/dic-iit/casadi-matlab-bindings/issues/5
+  target_compile_definitions(casadi_mex_matlab PRIVATE HAVE_OCTAVE)
   install(
     TARGETS casadi_mex_matlab
     EXPORT ${PROJECT_NAME}
@@ -78,6 +80,7 @@ if(CASADI_MATLAB_BINDINGS_USES_OCTAVE)
   find_package(Octave REQUIRED)
 
   add_library(casadi_mex_octave MODULE  ${MEX_FILES})
+  target_compile_definitions(casadi_mex_octave PRIVATE HAVE_OCTAVE)
   set_target_properties(casadi_mex_octave PROPERTIES DEBUG_POSTFIX "")
   target_include_directories(casadi_mex_octave PUBLIC ${OCTAVE_INCLUDE_DIRS})
   target_link_libraries(casadi_mex_octave ${OCTAVE_LIBRARIES} casadi)
