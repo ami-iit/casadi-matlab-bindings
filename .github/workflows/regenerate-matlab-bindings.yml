@@ -11,10 +11,8 @@ on:
 jobs:
     regenerate-matlab-bindings:
         name: "Regenerate MATLAB bindings"
-        runs-on: [ubuntu-20.04]
-        container:
         # Use Ubuntu Bionic as the https://github.com/casadi/casadi/wiki/matlab suggest to use GCC 7
-          image: ubuntu:bionic
+        runs-on: [ubuntu-18.04]
         steps:
         # Use master as a workaround for https://github.com/actions/checkout/issues/363
         - uses: actions/checkout@master
