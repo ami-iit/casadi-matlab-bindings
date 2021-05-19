@@ -18,10 +18,6 @@ jobs:
         steps:
         - uses: actions/checkout@v2
 
-        - name: Check status of repo
-          run: |
-            git status
-
         - name: Install dependencies via apt
           run: |
             # Install CasADi dependencies
@@ -31,8 +27,14 @@ jobs:
             apt-get install -y build-essential gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
             # From https://github.com/swig/swig/wiki/Getting-Started
             apt-get install -y libpcre3-dev autoconf automake libtool bison --install-recommends
+        
+        - name: Check status of repo
+          run: |
+            pwd
+            cd ${GITHUB_WORKSPACE}
+            pwd
+            git status
 
-            
         # From https://github.com/casadi/casadi/wiki/matlab
         - name: Install SWIG for that supports MATLAB required by CasADi
           run: |
