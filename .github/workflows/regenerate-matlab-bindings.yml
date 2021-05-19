@@ -18,6 +18,10 @@ jobs:
         steps:
         - uses: actions/checkout@v2
 
+        - name: Check status of repo
+          run: |
+            git status
+
         - name: Install dependencies via apt
           run: |
             # Install CasADi dependencies
