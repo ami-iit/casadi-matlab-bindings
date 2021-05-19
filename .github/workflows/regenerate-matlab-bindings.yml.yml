@@ -21,7 +21,7 @@ jobs:
         # From https://github.com/casadi/casadi/wiki/matlab
         - name: Install SWIG for that supports MATLAB required by CasADi
           run: |
-            sudo apt-get remove swig swig4.0
+            apt-get remove swig swig4.0
             cd ..
             git clone https://github.com/jaeandersson/swig
             cd swig
@@ -42,7 +42,7 @@ jobs:
         - name: Configure and compile CasADi
           run: |
             # Install CasADi dependencies
-            sudo apt-get install gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
+            apt-get install gcc g++ gfortran git cmake liblapack-dev pkg-config coinor-libipopt-dev liboctave-dev --install-recommends
             # Clone casadi from a given tag
             git clone https://github.com/dic-iit/casadi.git
             cd casadi
