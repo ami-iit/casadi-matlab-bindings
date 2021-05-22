@@ -66,6 +66,9 @@ if(CASADI_MATLAB_BINDINGS_USES_MATLAB)
       LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
   # Workaround for https://github.com/dic-iit/casadi-matlab-bindings/issues/5
   target_compile_definitions(casadi_mex_matlab PRIVATE HAVE_OCTAVE)
+  # casadi does not export correctly the C++11 requirement, let's do it here
+  # See https://github.com/robotology/robotology-superbuild/issues/753
+  target_compile_features(casadi_mex_matlab PRIVATE cxx_std_11)
   install(
     TARGETS casadi_mex_matlab
     EXPORT ${PROJECT_NAME}
@@ -83,6 +86,9 @@ if(CASADI_MATLAB_BINDINGS_USES_OCTAVE)
 
   add_library(casadi_mex_octave MODULE  ${MEX_FILES})
   target_compile_definitions(casadi_mex_octave PRIVATE HAVE_OCTAVE)
+  # casadi does not export correctly the C++11 requirement, let's do it here
+  # See https://github.com/robotology/robotology-superbuild/issues/753
+  target_compile_features(casadi_mex_octave PRIVATE cxx_std_11)
   set_target_properties(casadi_mex_octave PROPERTIES DEBUG_POSTFIX "")
   target_include_directories(casadi_mex_octave PUBLIC ${OCTAVE_INCLUDE_DIRS})
   target_link_libraries(casadi_mex_octave ${OCTAVE_LIBRARIES} casadi)
