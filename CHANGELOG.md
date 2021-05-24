@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-## [3.5.5.1] - 2021-05-xx
+## [3.5.5.1] - 2021-05-24
 
 ### Fixed
 - Correctly specify in CMake requirements on using C++11 features to fix compilation on macOS/Homebrew (https://github.com/dic-iit/casadi-matlab-bindings/pull/6).
