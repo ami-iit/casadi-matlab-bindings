@@ -7,9 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [3.5.5.2] - 2022-02-25
 
-- Add new Matlab versions to MATLAB_VERSIONS_MAPPING (https://github.com/ami-iit/casadi-matlab-bindings/pull/7).
-
 ### Fixed
+
+- Add new Matlab versions to MATLAB_VERSIONS_MAPPING (https://github.com/ami-iit/casadi-matlab-bindings/pull/7).
 
 ## [3.5.5.1] - 2021-05-24
 
