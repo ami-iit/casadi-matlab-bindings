@@ -15,7 +15,7 @@ How to use this repo
 2. Clone the repository
 
 ~~~
-git clone https://github.com/dic-iit/casadi-matlab-bindings.git
+git clone https://github.com/ami-iit/casadi-matlab-bindings.git
 ~~~
 
 3. Build it
