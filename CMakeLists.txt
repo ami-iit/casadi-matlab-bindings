@@ -64,7 +64,7 @@ if(CASADI_MATLAB_BINDINGS_USES_MATLAB)
       SRC ${MEX_FILES}
       NO_IMPLICIT_LINK_TO_MATLAB_LIBRARIES
       LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
-  # Workaround for https://github.com/dic-iit/casadi-matlab-bindings/issues/5
+  # Workaround for https://github.com/ami-iit/casadi-matlab-bindings/issues/5
   target_compile_definitions(casadi_mex_matlab PRIVATE HAVE_OCTAVE)
   # casadi does not export correctly the C++11 requirement, let's do it here
   # See https://github.com/robotology/robotology-superbuild/issues/753
