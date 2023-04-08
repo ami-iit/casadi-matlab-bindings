@@ -54,6 +54,15 @@ if(NOT ${casadi_VERSION} VERSION_EQUAL ${CASADI_UPSTREAM_VERSION})
   message(STATUS "Wrong casadi found via find_matlab: ${casadi_VERSION}, while required is ${CASADI_UPSTREAM_VERSION}")
 endif()
 
+# Include support for casadi's deprecated features (to be removed in the next release)
+# Note that this should match how the imported casadi is compiled and how the swig files
+# are generated in the casadi tarball, but as we can't extract this easily, we just hardcode
+# it to the same default value of casadi
+option(WITH_DEPRECATED_FEATURES "Compile with syntax that is scheduled to be deprecated" ON)
+if (WITH_DEPRECATED_FEATURES)
+  add_definitions(-DWITH_DEPRECATED_FEATURES)
+endif()
+
 ## Download casadi source code, to get the MATLAB generated files
 include(FetchContent)
 FetchContent_Declare(
