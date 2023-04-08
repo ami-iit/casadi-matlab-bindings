@@ -55,6 +55,7 @@ if(NOT ${casadi_VERSION} VERSION_EQUAL ${CASADI_UPSTREAM_VERSION})
 endif()
 
 ## Download casadi source code, to get the MATLAB generated files
+include(FetchContent)
 FetchContent_Declare(
   casadisourcecode
   URL      https://github.com/casadi/casadi/releases/download/${CASADI_UPSTREAM_VERSION}/casadi-${CASADI_UPSTREAM_VERSION}.tar.gz
