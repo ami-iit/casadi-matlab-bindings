@@ -63,6 +63,11 @@ if (WITH_DEPRECATED_FEATURES)
   add_definitions(-DWITH_DEPRECATED_FEATURES)
 endif()
 
+# This is required to make sure that mexFunction has the same visibility attributes in both mex.h
+# and the casadi generated MATLAB files
+# see https://github.com/ami-iit/casadi-matlab-bindings/pull/11#issuecomment-1500860511
+add_definitions(-DMW_NEEDS_VERSION_H)
+
 ## Download casadi source code, to get the MATLAB generated files
 include(FetchContent)
 FetchContent_Declare(
