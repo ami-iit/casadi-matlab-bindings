@@ -59,7 +59,7 @@ include(FetchContent)
 FetchContent_Declare(
   casadisourcecode
   URL      https://github.com/casadi/casadi/releases/download/${CASADI_UPSTREAM_VERSION}/casadi-${CASADI_UPSTREAM_VERSION}.tar.gz
-  URL_HASH MD5=5588a7b18261c20068beabfb4f530b87
+  URL_HASH MD5=e4340efef43e97eb50ac6176a5bcc999
 )
 FetchContent_GetProperties(casadisourcecode)
 if(casadisourcecode_POPULATED)
