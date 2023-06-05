@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [3.6.3.0] - 2023-06-05
+
+### Changed
+
+- Bumped based version of CasADi to 3.6.3 (https://github.com/ami-iit/casadi-matlab-bindings/pull/13).
+
+
 ## [3.6.2.0] - 2022-04-26
 
 ### Changed
