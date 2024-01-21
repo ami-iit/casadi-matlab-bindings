@@ -93,12 +93,20 @@ set(OCTAVE_ONLY_FILES_LOCATION ${casadisourcecode_SOURCE_DIR}/swig/octave)
 
 if(CASADI_MATLAB_BINDINGS_USES_MATLAB)
   find_package(Matlab REQUIRED)
-  matlab_add_mex(
+  if(CMAKE_VERSION VERSION_GREATER_EQUAL "3.24")
+    matlab_add_mex(
       NAME casadi_mex_matlab
       OUTPUT_NAME casadiMEX
       SRC ${MEX_FILES}
       NO_IMPLICIT_LINK_TO_MATLAB_LIBRARIES
       LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+  else()
+    matlab_add_mex(
+      NAME casadi_mex_matlab
+      OUTPUT_NAME casadiMEX
+      SRC ${MEX_FILES}
+      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+  endif()
   # Workaround for https://github.com/ami-iit/casadi-matlab-bindings/issues/5
   target_compile_definitions(casadi_mex_matlab PRIVATE HAVE_OCTAVE)
   # casadi does not export correctly the C++11 requirement, let's do it here
