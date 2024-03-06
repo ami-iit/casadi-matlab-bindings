@@ -1,9 +1,6 @@
 # Changelog
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
-
-## [Unreleased]
+This file used to document notable changes to this project done before June 2023. For changes after that date, plase refers to the release notes of each release at https://github.com/robotology/whole-body-estimators/releases .
 
 ## [3.6.3.0] - 2023-06-05
 
