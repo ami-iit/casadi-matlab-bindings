@@ -3,8 +3,8 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(CASADI_UPSTREAM_VERSION 3.6.3)
-set(CASADI_MATLAB_BINDINGS_REVISION 1)
+set(CASADI_UPSTREAM_VERSION 3.6.5)
+set(CASADI_MATLAB_BINDINGS_REVISION 0)
 set(CASADI_MATLAB_BINDINGS_VERSION "${CASADI_UPSTREAM_VERSION}.${CASADI_MATLAB_BINDINGS_REVISION}")
 project(casadi-matlab-bindings
   LANGUAGES C CXX
@@ -73,7 +73,7 @@ include(FetchContent)
 FetchContent_Declare(
   casadisourcecode
   URL      https://github.com/casadi/casadi/releases/download/${CASADI_UPSTREAM_VERSION}/casadi-${CASADI_UPSTREAM_VERSION}.tar.gz
-  URL_HASH MD5=d068229f720e992bf57a7d7a958e64c6
+  URL_HASH MD5=93602789d000baee2142eb6a5b37d906
 )
 FetchContent_GetProperties(casadisourcecode)
 if(casadisourcecode_POPULATED)
