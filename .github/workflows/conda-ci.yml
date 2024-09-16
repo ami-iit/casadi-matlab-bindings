@@ -33,7 +33,7 @@ jobs:
         # Compilation related dependencies
         mamba install cmake compilers make ninja pkg-config
         # Actual dependencies
-        mamba install casadi=3.6.5
+        mamba install casadi=3.6.6
     
     - name: Set up MATLAB
       uses: matlab-actions/setup-matlab@v2
