@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(CASADI_UPSTREAM_VERSION 3.6.7)
+set(CASADI_UPSTREAM_VERSION 3.7.0)
 set(CASADI_MATLAB_BINDINGS_REVISION 0)
 set(CASADI_MATLAB_BINDINGS_VERSION "${CASADI_UPSTREAM_VERSION}.${CASADI_MATLAB_BINDINGS_REVISION}")
 project(casadi-matlab-bindings
@@ -73,7 +73,7 @@ include(FetchContent)
 FetchContent_Declare(
   casadisourcecode
   URL      https://github.com/casadi/casadi/releases/download/${CASADI_UPSTREAM_VERSION}/casadi-${CASADI_UPSTREAM_VERSION}.tar.gz
-  URL_HASH MD5=15d04df1fdd94716d75a487a747893d5
+  URL_HASH MD5=0034cce1dd8f3ea3ee91225fc0424426
 )
 FetchContent_GetProperties(casadisourcecode)
 if(casadisourcecode_POPULATED)
@@ -99,13 +99,13 @@ if(CASADI_MATLAB_BINDINGS_USES_MATLAB)
       OUTPUT_NAME casadiMEX
       SRC ${MEX_FILES}
       NO_IMPLICIT_LINK_TO_MATLAB_LIBRARIES
-      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi::casadi)
   else()
     matlab_add_mex(
       NAME casadi_mex_matlab
       OUTPUT_NAME casadiMEX
       SRC ${MEX_FILES}
-      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi::casadi)
   endif()
   # Workaround for https://github.com/ami-iit/casadi-matlab-bindings/issues/5
   target_compile_definitions(casadi_mex_matlab PRIVATE HAVE_OCTAVE)
@@ -149,7 +149,7 @@ if(CASADI_MATLAB_BINDINGS_USES_OCTAVE)
   target_compile_features(casadi_mex_octave PRIVATE cxx_std_11)
   set_target_properties(casadi_mex_octave PROPERTIES DEBUG_POSTFIX "")
   target_include_directories(casadi_mex_octave PUBLIC ${OCTAVE_INCLUDE_DIRS})
-  target_link_libraries(casadi_mex_octave ${OCTAVE_LIBRARIES} casadi)
+  target_link_libraries(casadi_mex_octave ${OCTAVE_LIBRARIES} casadi::casadi)
   if(APPLE)
     set_target_properties(casadi_mex_octave PROPERTIES LINK_FLAGS "-undefined dynamic_lookup")
   endif()

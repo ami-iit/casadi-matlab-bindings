@@ -29,7 +29,7 @@ jobs:
     - name: Dependencies
       shell: bash -l {0}
       run: |
-        conda install cmake compilers make ninja pkg-config casadi=3.6.7
+        conda install cmake compilers make ninja pkg-config casadi=3.7.0
     
     - name: Set up MATLAB
       uses: matlab-actions/setup-matlab@v2
