@@ -99,13 +99,13 @@ if(CASADI_MATLAB_BINDINGS_USES_MATLAB)
       OUTPUT_NAME casadiMEX
       SRC ${MEX_FILES}
       NO_IMPLICIT_LINK_TO_MATLAB_LIBRARIES
-      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi::casadi)
   else()
     matlab_add_mex(
       NAME casadi_mex_matlab
       OUTPUT_NAME casadiMEX
       SRC ${MEX_FILES}
-      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi)
+      LINK_TO ${Matlab_MEX_LIBRARY} ${Matlab_MX_LIBRARY} casadi::casadi)
   endif()
   # Workaround for https://github.com/ami-iit/casadi-matlab-bindings/issues/5
   target_compile_definitions(casadi_mex_matlab PRIVATE HAVE_OCTAVE)
@@ -149,7 +149,7 @@ if(CASADI_MATLAB_BINDINGS_USES_OCTAVE)
   target_compile_features(casadi_mex_octave PRIVATE cxx_std_11)
   set_target_properties(casadi_mex_octave PROPERTIES DEBUG_POSTFIX "")
   target_include_directories(casadi_mex_octave PUBLIC ${OCTAVE_INCLUDE_DIRS})
-  target_link_libraries(casadi_mex_octave ${OCTAVE_LIBRARIES} casadi)
+  target_link_libraries(casadi_mex_octave ${OCTAVE_LIBRARIES} casadi::casadi)
   if(APPLE)
     set_target_properties(casadi_mex_octave PROPERTIES LINK_FLAGS "-undefined dynamic_lookup")
   endif()
